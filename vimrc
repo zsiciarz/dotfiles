@@ -20,6 +20,9 @@ imap <C-s> <Esc>:w<CR>a
 
 filetype plugin indent on
 
+" omnicomplete
+set completeopt=longest,menuone
+
 set tags+=$HOME/.vim/tags/python.ctags
 
 python << EOF
