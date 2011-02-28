@@ -3,3 +3,14 @@ username = Zbigniew Siciarz <antyqjon@gmail.com>
 
 [extensions]
 color =
+bookmarks =
+hgext.highlight =
+mq =
+progress =
+transplant =
+
+[bookmarks]
+track.current = True
+
+[web]
+pygments_style = friendly
