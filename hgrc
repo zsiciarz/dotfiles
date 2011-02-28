@@ -2,11 +2,13 @@
 username = Zbigniew Siciarz <antyqjon@gmail.com>
 
 [extensions]
-color =
+color = 
 bookmarks =
+fetch =
 hgext.highlight =
 mq =
 progress =
+hgext.record =
 transplant =
 
 [bookmarks]
