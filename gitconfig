@@ -1,0 +1,7 @@
+[color]
+	ui = true
+[user]
+	name = Zbigniew Siciarz
+	email = antyqjon@gmail.com
+[core]
+	editor = vim
