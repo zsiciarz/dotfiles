@@ -1,8 +1,18 @@
 set nocompatible
+
+" Indentation
+" ===========
+"
+" preserve current indentation
 set autoindent
+" indent width
 set tabstop=4
+" > and < indent width
 set shiftwidth=4
+" backspace deletes 4 spaces
+set softtabstop=4
 set shiftround
+
 set expandtab
 set cursorline
 set showmatch
