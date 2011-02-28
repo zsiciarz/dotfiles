@@ -25,6 +25,9 @@ set numberwidth=5
 set ruler
 set autochdir
 
+" delete trailing whitespace in Python files
+autocmd BufWritePre *.py normal m`:%s/\s\+$//e ``
+
 nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
 
