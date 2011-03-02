@@ -1,5 +1,6 @@
 [ui]
 username = Zbigniew Siciarz <antyqjon@gmail.com>
+ignore = ~/.hgignore
 
 [extensions]
 color = 
