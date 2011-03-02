@@ -9,6 +9,7 @@ fetch =
 hgext.highlight =
 mq =
 progress =
+rebase =
 hgext.record =
 transplant =
 
