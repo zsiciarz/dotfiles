@@ -2,6 +2,9 @@
 username = Zbigniew Siciarz <antyqjon@gmail.com>
 ignore = ~/.hgignore
 
+[diff]
+git = True
+
 [extensions]
 color = 
 bookmarks =
