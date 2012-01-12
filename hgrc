@@ -10,11 +10,13 @@ color =
 bookmarks =
 fetch =
 hgext.highlight =
+hgk =
 mq =
 progress =
 rebase =
 hgext.record =
 transplant =
+hgshelve = ~/.hgext/hgshelve.py
 
 [bookmarks]
 track.current = True
