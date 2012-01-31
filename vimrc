@@ -13,6 +13,10 @@ set shiftwidth=4
 set softtabstop=4
 set shiftround
 
+syntax enable
+set background=dark
+colorscheme solarized
+
 set expandtab
 set cursorline
 set showmatch
