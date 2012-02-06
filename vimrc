@@ -37,8 +37,9 @@ imap <C-s> <Esc>:w<CR>a
 
 filetype plugin indent on
 
-" omnicomplete
+" omnicomplete, but use Ctrl+Space
 set completeopt=longest,menuone
+inoremap <Nul> <C-x><C-o>
 
 set tags+=$HOME/.vim/tags/python.ctags
 
