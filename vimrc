@@ -31,6 +31,9 @@ set numberwidth=5
 set ruler
 set autochdir
 
+" print margin
+set colorcolumn=80
+
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace guibg=red
@@ -68,4 +71,5 @@ for p in sys.path:
     if os.path.isdir(p):
         vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
 EOF
+
 
