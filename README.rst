@@ -66,3 +66,10 @@ NERD Tree
     cd ~/.vim/bundle
     git clone https://github.com/scrooloose/nerdtree.git
 
+MiniBufExplorer
+===============
+
+::
+
+    cd ~/.vim/bundle
+    git clone https://github.com/fholgado/minibufexpl.vim.git

@@ -81,3 +81,10 @@ autocmd vimenter * NERDTree
 autocmd vimenter * wincmd l
 " close vim if NERD Tree is the last open buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" MiniBufExplorer
+" use Ctrl+arrows or Ctrl+Tab to switch buffers
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
