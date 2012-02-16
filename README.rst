@@ -57,3 +57,12 @@ CSS plugins
     git clone https://github.com/skammer/vim-css-color.git
     git clone https://github.com/groenewege/vim-less
 
+
+NERD Tree
+=========
+
+::
+
+    cd ~/.vim/bundle
+    git clone https://github.com/scrooloose/nerdtree.git
+

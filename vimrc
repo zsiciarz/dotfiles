@@ -74,3 +74,10 @@ EOF
 
 " HTML AutoCloseTag
 autocmd FileType xhtml,xml,htmldjango so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
+
+" NERD Tree
+" automatically load on startup, focus on the editor window
+autocmd vimenter * NERDTree
+autocmd vimenter * wincmd l
+" close vim if NERD Tree is the last open buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
