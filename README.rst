@@ -28,3 +28,11 @@ Lawrencium
 
     cd ~/.vim/bundle
     hg clone https://bitbucket.org/ludovicchabant/vim-lawrencium
+
+Syntastic
+=========
+
+::
+
+    cd ~/.vim/bundle
+    git clone https://github.com/scrooloose/syntastic.git
