@@ -36,3 +36,12 @@ Syntastic
 
     cd ~/.vim/bundle
     git clone https://github.com/scrooloose/syntastic.git
+
+
+HTML AutoCloseTag
+=================
+
+::
+
+    cd ~/.vim/bundle
+    git clone https://github.com/vim-scripts/HTML-AutoCloseTag.git
