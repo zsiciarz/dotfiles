@@ -56,6 +56,14 @@ python << EOF
 import os
 import sys
 import vim
+
+# Virtualenv?
+venv = os.environ.get('VIRTUAL_ENV', '')
+if venv:
+    activate_this = os.path.join(venv, 'bin', 'activate_this.py')
+    if os.path.exists(activate_this):
+        execfile(activate_this, dict(__file__=activate_this))
+
 for p in sys.path:
     if os.path.isdir(p):
         vim.command(r"set path+=%s" % (p.replace(" ", r"\ ")))
