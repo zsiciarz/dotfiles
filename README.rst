@@ -84,3 +84,11 @@ MiniBufExplorer
 
     cd ~/.vim/bundle
     git clone https://github.com/fholgado/minibufexpl.vim.git
+
+Bclose
+======
+
+::
+
+    cd ~/.vim/bundle
+    git clone https://github.com/rbgrouleff/bclose.vim.git
