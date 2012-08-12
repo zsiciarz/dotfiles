@@ -15,6 +15,8 @@ Pathogen
 Solarized color scheme
 ======================
 
+If you are a gnome-terminal user, see this: https://github.com/sigurdga/gnome-terminal-colors-solarized
+
 ::
 
     cd ~/.vim/bundle
