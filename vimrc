@@ -92,3 +92,6 @@ let g:miniBufExplModSelTarget = 1
 
 " GRB: use fancy buffer closing that doesn't close the split
 cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
+
+let g:haskell_conceal_enumerations = 0
+

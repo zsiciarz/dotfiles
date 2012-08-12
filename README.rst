@@ -99,3 +99,30 @@ Bclose
 
     cd ~/.vim/bundle
     git clone https://github.com/rbgrouleff/bclose.vim.git
+
+vim2hs
+======
+
+::
+
+    cd ~/.vim/bundle
+    git clone https://github.com/dag/vim2hs.git
+
+vimproc
+=======
+
+::
+
+    cd ~/.vim/bundle
+    git clone https://github.com/Shougo/vimproc.git
+    cd vimproc
+    make -f make_unix.mak
+
+ghcmod-vim
+==========
+
+::
+
+    cd ~/.vim/bundle
+    git clone https://github.com/eagletmt/ghcmod-vim.git
+
