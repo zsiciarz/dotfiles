@@ -12,6 +12,15 @@ Pathogen
         https://raw.github.com/tpope/vim-pathogen/HEAD/autoload/pathogen.vim
 
 
+Solarized color scheme
+======================
+
+::
+
+    cd ~/.vim/bundle
+    git clone git://github.com/altercation/vim-colors-solarized.git
+
+
 Fugitive
 ========
 
