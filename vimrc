@@ -13,24 +13,39 @@ set tabstop=4
 set shiftwidth=4
 " backspace deletes 4 spaces
 set softtabstop=4
+" round indent to multiple of shiftwidth
 set shiftround
 
 " for gnome-terminal to work correctly with solarized
 set t_Co=16
+" enable syntax highlighting
 syntax enable
+" dark background for solarized
 set background=dark
+" the awesome color scheme
 colorscheme solarized
 
+" expand tabs to spaces
 set expandtab
+" highlight current line
 set cursorline
+" show matching bracket
 set showmatch
+" disable highlighting of search results
 set nohls
+" if ignorecase is set, detect uppercase chars in search pattern
 set smartcase
+" infer correct character case upon word completion
 set infercase
+" search-as-you-type
 set incsearch
+" show line numbers
 set number
+" minimal number of columns for line number
 set numberwidth=5
+" show cursor position in the bottom right corner
 set ruler
+" automatically change directory when opening a file
 set autochdir
 
 " print margin
@@ -46,9 +61,11 @@ autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
 " delete trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
+" Ctrl+S saves the file in normal and insert mode
 nmap <C-s> :w<CR>
 imap <C-s> <Esc>:w<CR>a
 
+" enable filetype-specific plugins and indentation rules
 filetype plugin indent on
 
 " omnicomplete, but use Ctrl+Space
@@ -106,5 +123,6 @@ let g:miniBufExplModSelTarget = 1
 " GRB: use fancy buffer closing that doesn't close the split
 cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
 
+" always expand Haskell enumerations, like derived instances
 let g:haskell_conceal_enumerations = 0
 
