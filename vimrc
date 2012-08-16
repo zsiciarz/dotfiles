@@ -15,6 +15,8 @@ set shiftwidth=4
 set softtabstop=4
 set shiftround
 
+" for gnome-terminal to work correctly with solarized
+set t_Co=16
 syntax enable
 set background=dark
 colorscheme solarized
@@ -100,3 +102,9 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTree
 let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
+
+" GRB: use fancy buffer closing that doesn't close the split
+cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
+
+let g:haskell_conceal_enumerations = 0
+
