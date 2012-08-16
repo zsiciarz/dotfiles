@@ -72,6 +72,12 @@ filetype plugin indent on
 set completeopt=longest,menuone
 inoremap <Nul> <C-x><C-o>
 
+" Powerline
+" using fancy symbols
+let g:Powerline_symbols = 'fancy'
+" Solarized-compatible color scheme
+let g:Powerline_colorscheme = 'skwp'
+
 " ctags for system Python and for virtual environments
 let base_ctags_path = $HOME . "/.vim/tags/python.ctags"
 exec 'set tags+=' . base_ctags_path

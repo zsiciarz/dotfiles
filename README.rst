@@ -55,6 +55,14 @@ Syntastic
     cd ~/.vim/bundle
     git clone https://github.com/scrooloose/syntastic.git
 
+Powerline
+=========
+
+::
+
+    cd ~/.vim/bundle
+    git clone https://github.com/Lokaltog/vim-powerline.git
+    cd ~/.fonts/ && git clone https://github.com/scotu/ubuntu-mono-powerline.git
 
 HTML AutoCloseTag
 =================
