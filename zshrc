@@ -33,9 +33,14 @@ plugins=(django git pip python)
 
 source $ZSH/oh-my-zsh.sh
 
+# 256 colors in terminal to make Solarized look better in Vim
+export TERM=xterm-256color
+
 # Customize to your needs...
-export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/zbyszek/.cabal/bin
 
 export WORKON_HOME=~/v
 source /usr/local/bin/virtualenvwrapper.sh
+export PYTHONPATH="$PYTHONPATH:/home/zbyszek/Development/"
 
+alias ack=ack-grep

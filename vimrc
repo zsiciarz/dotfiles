@@ -17,7 +17,7 @@ set softtabstop=4
 set shiftround
 
 " for gnome-terminal to work correctly with solarized
-set t_Co=16
+set t_Co=256
 " enable syntax highlighting
 syntax enable
 " dark background for solarized
