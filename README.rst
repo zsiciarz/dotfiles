@@ -80,7 +80,7 @@ CSS plugins
 
     cd ~/.vim/bundle
     git clone https://github.com/hail2u/vim-css3-syntax.git
-    git clone https://github.com/skammer/vim-css-color.git
+    git clone https://github.com/ap/vim-css-color.git
     git clone https://github.com/groenewege/vim-less
 
 
