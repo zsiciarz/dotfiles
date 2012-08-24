@@ -116,6 +116,7 @@ autocmd vimenter * NERDTree
 autocmd vimenter * wincmd l
 " close vim if NERD Tree is the last open buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+let NERDTreeIgnore = ['\.py[c|o]$', '\~$']
 
 " MiniBufExplorer
 " use Ctrl+arrows or Ctrl+Tab to switch buffers
