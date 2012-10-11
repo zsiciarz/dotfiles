@@ -52,7 +52,9 @@ set autochdir
 set mouse=a
 
 " print margin
-set colorcolumn=80
+if exists('+colorcolumn')
+    set colorcolumn=80
+endif
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
