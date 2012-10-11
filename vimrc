@@ -48,6 +48,9 @@ set ruler
 " automatically change directory when opening a file
 set autochdir
 
+" enable mouse
+set mouse=a
+
 " print margin
 set colorcolumn=80
 
