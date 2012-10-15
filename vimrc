@@ -25,6 +25,8 @@ set background=dark
 " the awesome color scheme
 colorscheme solarized
 
+" enable switching between unsaved buffers
+set hidden
 " expand tabs to spaces
 set expandtab
 " highlight current line
