@@ -21,6 +21,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
 Bundle 'Shougo/neocomplcache'
+Bundle 'majutsushi/tagbar'
 
 " Color scheme
 Bundle 'altercation/vim-colors-solarized'
@@ -223,6 +224,9 @@ endif
 
 " GRB: use fancy buffer closing that doesn't close the split
 cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
+
+" Tagbar
+nmap <F8> :TagbarToggle<CR>
 
 " always expand Haskell enumerations, like derived instances
 let g:haskell_conceal_enumerations = 0
