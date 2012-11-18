@@ -93,6 +93,12 @@ if exists('+colorcolumn')
     set colorcolumn=80
 endif
 
+" Indent with Tab in normal and visual mode; dedent with Shift+Tab
+noremap <Tab> v>
+noremap <S-Tab> v<
+vnoremap <Tab> >gv
+vnoremap <S-Tab> <gv
+
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace guibg=red
