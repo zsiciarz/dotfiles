@@ -1,6 +1,39 @@
 set nocompatible
 
-call pathogen#infect()
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" Vundle manages itself
+Bundle 'gmarik/vundle'
+
+" Improvements to vim commands and motions
+Bundle 'tpope/vim-surround'
+Bundle 'rbgrouleff/bclose.vim'
+
+" 'vim as IDE' features
+Bundle 'scrooloose/nerdtree'
+Bundle 'fholgado/minibufexpl.vim'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'scrooloose/syntastic'
+
+" Color scheme
+Bundle 'altercation/vim-colors-solarized'
+
+" Version control integration
+Bundle 'tpope/vim-fugitive'
+Bundle 'ludovicchabant/vim-lawrencium'
+
+" HTML and CSS plugins
+Bundle 'vim-scripts/HTML-AutoCloseTag'
+Bundle 'hail2u/vim-css3-syntax'
+Bundle 'ap/vim-css-color'
+Bundle 'groenewege/vim-less'
+
+" Haskell plugins
+Bundle 'dag/vim2hs'
+
 
 " Indentation
 " ===========
