@@ -14,6 +14,7 @@ Bundle 'rbgrouleff/bclose.vim'
 
 " 'vim as IDE' features
 Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
