@@ -19,6 +19,7 @@ Bundle 'scrooloose/nerdcommenter'
 Bundle 'fholgado/minibufexpl.vim'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
+Bundle 'mileszs/ack.vim'
 
 " Color scheme
 Bundle 'altercation/vim-colors-solarized'
