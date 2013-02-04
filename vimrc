@@ -127,7 +127,7 @@ inoremap <Nul> <C-x><C-o>
 " using fancy symbols
 let g:Powerline_symbols = 'fancy'
 " Solarized-compatible color scheme
-let g:Powerline_colorscheme = 'skwp'
+let g:Powerline_colorscheme = 'solarized256'
 
 " ctags for system Python and for virtual environments
 let base_ctags_path = $HOME . "/.vim/tags/python.ctags"
