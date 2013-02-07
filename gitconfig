@@ -5,3 +5,5 @@
 	email = antyqjon@gmail.com
 [core]
 	editor = vim
+[alias]
+    st = status
