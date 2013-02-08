@@ -44,3 +44,4 @@ source /usr/local/bin/virtualenvwrapper.sh
 export PYTHONPATH="$PYTHONPATH:/home/zbyszek/Development/"
 
 alias ack=ack-grep
+alias gfo="git fetch origin"
