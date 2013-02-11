@@ -45,3 +45,4 @@ export PYTHONPATH="$PYTHONPATH:/home/zbyszek/Development/"
 
 alias ack=ack-grep
 alias gfo="git fetch origin"
+alias gitka="gitk --all"
