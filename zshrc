@@ -36,6 +36,9 @@ source $ZSH/oh-my-zsh.sh
 # 256 colors in terminal to make Solarized look better in Vim
 export TERM=xterm-256color
 
+# preserve color output with less
+export LESS=-RFX
+
 # Customize to your needs...
 export PATH=/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/home/zbyszek/.cabal/bin
 
