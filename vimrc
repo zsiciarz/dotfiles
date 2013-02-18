@@ -175,6 +175,9 @@ let g:miniBufExplMapWindowNavVim = 1
 let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1
 
+" Syntastic
+let g:syntastic_python_flake8_args = '--ignore=E501'
+
 " NeoComplCache
 " Launches neocomplcache automatically on vim startup.
 let g:neocomplcache_enable_at_startup = 1
