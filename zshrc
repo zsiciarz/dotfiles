@@ -33,6 +33,11 @@ plugins=(django git pip python vi-mode vundle)
 
 source $ZSH/oh-my-zsh.sh
 
+# ignore pyc and temporary files during autocompletion, except for ls and rm
+zstyle ':completion:*:(all-|)files' ignored-patterns "(*.pyc|*.swp|*~)"
+zstyle ':completion:*:ls:*:(all-|)files' ignored-patterns
+zstyle ':completion:*:rm:*:(all-|)files' ignored-patterns
+
 # 256 colors in terminal to make Solarized look better in Vim
 export TERM=xterm-256color
 
