@@ -1,0 +1,25 @@
+set mainfont {{DejaVu Sans} 10}
+set textfont {{DejaVu Sans Mono} 10}
+set uifont {sans 9 bold}
+set tabstop 4
+set findmergefiles 0
+set maxgraphpct 50
+set maxwidth 16
+set cmitmode patch
+set wrapcomment none
+set autoselect 1
+set autosellen 40
+set showneartags 1
+set hideremotes 0
+set showlocalchanges 1
+set datetimeformat {%Y-%m-%d %H:%M:%S}
+set limitdiffs 1
+set uicolor #073642
+set want_ttk 0
+set bgcolor #002b36
+set fgcolor #fdf6e3
+set colors {green red blue magenta darkgrey brown orange}
+set diffcolors {{#dc322f} #859900 #268bd2}
+set markbgcolor #657b83
+set diffcontext 3
+set selectbgcolor #657b83
