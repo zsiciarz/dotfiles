@@ -177,6 +177,7 @@ let g:miniBufExplModSelTarget = 1
 
 " Syntastic
 let g:syntastic_python_flake8_args = '--ignore=E501'
+let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 " NeoComplCache
 " Launches neocomplcache automatically on vim startup.
