@@ -1,4 +1,5 @@
 --pager=less
 --ignore-dir=htmlcov
 --type-add=css=.less
+--type-set=markdown=.markdown,.md
 
