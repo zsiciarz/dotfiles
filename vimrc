@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 " Improvements to vim commands and motions
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'rbgrouleff/bclose.vim'
 
 " 'vim as IDE' features
