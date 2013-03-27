@@ -1,6 +1,7 @@
 --pager=less
 --smart-case
 --ignore-dir=htmlcov
+--ignore-dir=build
 --type-add=css=.less
 --type-set=markdown=.markdown,.md
 
