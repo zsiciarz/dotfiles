@@ -8,3 +8,5 @@
 [alias]
     st = status
     dif = diff
+[rerere]
+    enabled = true
