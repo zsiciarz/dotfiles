@@ -8,6 +8,7 @@
 [alias]
     st = status
     dif = diff
+    ready = rebase -i @{u}
 [rerere]
     enabled = true
 [help]
