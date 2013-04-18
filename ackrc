@@ -3,5 +3,7 @@
 --ignore-dir=htmlcov
 --ignore-dir=coverage_html
 --ignore-dir=build
+--ignore-dir=debug
+--ignore-dir=release
 --type-add=css=.less
 --type-set=markdown=.markdown,.md
