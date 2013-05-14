@@ -134,8 +134,8 @@ let g:Powerline_colorscheme = 'solarized256'
 let base_ctags_path = $HOME . "/.vim/tags/python.ctags"
 exec 'set tags+=' . base_ctags_path
 " location of site-packages (virtualenv-aware)
-let site_packages = system('python -c "import sys; from distutils.sysconfig import get_python_lib; sys.stdout.write(get_python_lib())"')
 if !empty($VIRTUAL_ENV)
+    let site_packages = system('python -c "import sys; from distutils.sysconfig import get_python_lib; sys.stdout.write(get_python_lib())"')
     " if we are in a virtualenv, create local ctags file and add it to tags
     let local_ctags_path = $VIRTUAL_ENV . "/python.ctags"
     exec 'silent !ctags -R -f' local_ctags_path site_packages
