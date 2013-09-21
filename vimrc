@@ -37,6 +37,9 @@ Bundle 'hail2u/vim-css3-syntax'
 Bundle 'ap/vim-css-color'
 Bundle 'groenewege/vim-less'
 
+" CoffeeScript
+Bundle 'kchmck/vim-coffee-script'
+
 " Haskell plugins
 Bundle 'dag/vim2hs'
 
