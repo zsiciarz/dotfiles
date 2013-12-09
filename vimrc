@@ -43,6 +43,8 @@ Bundle 'kchmck/vim-coffee-script'
 " Haskell plugins
 Bundle 'dag/vim2hs'
 
+" nginx
+Bundle 'evanmiller/nginx-vim-syntax'
 
 " Indentation
 " ===========
