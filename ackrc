@@ -6,5 +6,6 @@
 --ignore-dir=debug
 --ignore-dir=release
 --ignore-dir=.tox
+--ignore-dir=.cabal-sandbox
 --type-add=css=.less
 --type-set=markdown=.markdown,.md
