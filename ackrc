@@ -7,5 +7,6 @@
 --ignore-dir=release
 --ignore-dir=.tox
 --ignore-dir=.cabal-sandbox
+--ignore-file=is:.coverage
 --type-add=css=.less
 --type-set=markdown=.markdown,.md
