@@ -52,5 +52,9 @@ source /usr/local/bin/virtualenvwrapper.sh
 export PYTHONPATH="$PYTHONPATH:/home/zbyszek/Development/"
 
 alias ack=ack-grep
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
 alias gfo="git fetch origin"
 alias gitka="gitk --all"
