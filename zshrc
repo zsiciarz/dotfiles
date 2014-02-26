@@ -49,7 +49,7 @@ export PATH=$HOME/bin:$HOME/.cabal/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:
 
 export WORKON_HOME=~/v
 source /usr/local/bin/virtualenvwrapper.sh
-export PYTHONPATH="$PYTHONPATH:/home/zbyszek/Development/"
+export PYTHONPATH="$PYTHONPATH:$HOME/Development/"
 
 alias ack=ack-grep
 
