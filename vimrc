@@ -23,6 +23,9 @@ Bundle 'mileszs/ack.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'majutsushi/tagbar'
 
+" Python-related plugins
+Bundle 'jmcantrell/vim-virtualenv'
+
 " Color scheme
 Bundle 'altercation/vim-colors-solarized'
 
