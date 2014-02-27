@@ -21,10 +21,8 @@ Solarized color scheme
 
 If you are a gnome-terminal user, see this: https://github.com/sigurdga/gnome-terminal-colors-solarized
 
-Powerline
----------
+Airline
+-------
 
-Run the following command to have fancy Unicode symbols in Powerline (Ubuntu)::
-
-    cd ~/.fonts/ && git clone https://github.com/scotu/ubuntu-mono-powerline.git
-
+No fancy symbols? See https://github.com/Lokaltog/powerline-fonts for patched
+fonts.
