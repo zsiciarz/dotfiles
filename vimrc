@@ -17,7 +17,6 @@ Bundle 'rbgrouleff/bclose.vim'
 " 'vim as IDE' features
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'fholgado/minibufexpl.vim'
-Bundle 'Lokaltog/vim-powerline'
 Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
 Bundle 'Shougo/neocomplcache'
@@ -158,12 +157,6 @@ let g:netrw_winsize = 20
 " omnicomplete, but use Ctrl+Space
 set completeopt=longest,menuone
 inoremap <Nul> <C-x><C-o>
-
-" Powerline
-" using fancy symbols
-let g:Powerline_symbols = 'fancy'
-" Solarized-compatible color scheme
-let g:Powerline_colorscheme = 'solarized256'
 
 " ctags for system Python and for virtual environments
 let base_ctags_path = $HOME . "/.vim/tags/python.ctags"
