@@ -17,6 +17,7 @@ Bundle 'rbgrouleff/bclose.vim'
 " 'vim as IDE' features
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'fholgado/minibufexpl.vim'
+Bundle 'bling/vim-airline'
 Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
 Bundle 'Shougo/neocomplcache'
@@ -153,6 +154,9 @@ let g:netrw_browse_split = 4
 let g:netrw_liststyle = 3
 let g:netrw_list_hide = '^\.\S\+,\~$,\.pyc$,\.pyo$,__pycache__/,\.egg-info/'
 let g:netrw_winsize = 20
+
+" Airline
+let g:airline_powerline_fonts = 1
 
 " omnicomplete, but use Ctrl+Space
 set completeopt=longest,menuone
