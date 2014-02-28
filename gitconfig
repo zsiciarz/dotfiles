@@ -1,10 +1,10 @@
 [color]
-	ui = true
+    ui = true
 [user]
-	name = Zbigniew Siciarz
-	email = antyqjon@gmail.com
+    name = Zbigniew Siciarz
+    email = antyqjon@gmail.com
 [core]
-	editor = vim
+    editor = vim
 [alias]
     st = status
     dif = diff
@@ -14,4 +14,4 @@
 [help]
     autocorrect = 1
 [push]
-	default = simple
+    default = simple
