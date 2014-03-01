@@ -22,6 +22,7 @@ Bundle 'scrooloose/syntastic'
 Bundle 'mileszs/ack.vim'
 Bundle 'Shougo/neocomplcache'
 Bundle 'majutsushi/tagbar'
+Bundle 'kien/ctrlp.vim'
 
 " Python-related plugins
 Bundle 'jmcantrell/vim-virtualenv'
