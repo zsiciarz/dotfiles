@@ -167,18 +167,6 @@ let g:airline_powerline_fonts = 1
 set completeopt=longest,menuone
 inoremap <Nul> <C-x><C-o>
 
-" ctags for system Python and for virtual environments
-let base_ctags_path = $HOME . "/.vim/tags/python.ctags"
-exec 'set tags+=' . base_ctags_path
-" location of site-packages (virtualenv-aware)
-if !empty($VIRTUAL_ENV)
-    let site_packages = system('python -c "import sys; from distutils.sysconfig import get_python_lib; sys.stdout.write(get_python_lib())"')
-    " if we are in a virtualenv, create local ctags file and add it to tags
-    let local_ctags_path = $VIRTUAL_ENV . "/python.ctags"
-    "exec 'silent !ctags -R -f' local_ctags_path site_packages
-    exec 'set tags+=' . local_ctags_path
-endif
-
 " HTML AutoCloseTag
 autocmd FileType xhtml,xml,htmldjango so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
 
