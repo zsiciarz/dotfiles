@@ -101,12 +101,8 @@ endif
 
 " preserve current indentation
 set autoindent
-" indent width
-set tabstop=4
-" > and < indent width
-set shiftwidth=4
-" backspace deletes 4 spaces
-set softtabstop=4
+" indent 4 spaces in a consistent manner
+set tabstop=4 shiftwidth=4 softtabstop=4
 " round indent to multiple of shiftwidth
 set shiftround
 " expand tabs to spaces
