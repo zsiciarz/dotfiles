@@ -55,8 +55,6 @@ Bundle 'evanmiller/nginx-vim-syntax'
 " Basic options
 " ==============
 
-" enable switching between unsaved buffers
-set hidden
 " highlight current line
 set cursorline
 " show matching bracket
@@ -123,9 +121,16 @@ set list
 set listchars=tab:▸\ ,
 highlight SpecialKey cterm=none ctermfg=0 guifg=#073642 ctermbg=8 guibg=#002b36
 
+" Navigating between buffers
+" ==========================
+
+" enable switching between unsaved buffers
+set hidden
 " use Ctrl+arrow up/down to switch buffers
 noremap <C-Up>   :MBEbn<CR>
 noremap <C-Down> :MBEbp<CR>
+" GRB: use fancy buffer closing that doesn't close the split
+cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -230,9 +235,6 @@ autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 if !exists('g:neocomplcache_omni_patterns')
   let g:neocomplcache_omni_patterns = {}
 endif
-
-" GRB: use fancy buffer closing that doesn't close the split
-cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
