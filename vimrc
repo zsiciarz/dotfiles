@@ -125,10 +125,6 @@ autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
 " delete trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
-" Ctrl+S saves the file in normal and insert mode
-nmap <C-s> :w<CR>
-imap <C-s> <Esc>:w<CR>a
-
 " enable filetype-specific plugins and indentation rules
 filetype plugin indent on
 
