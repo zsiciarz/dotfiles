@@ -105,6 +105,10 @@ if exists('+colorcolumn')
     set colorcolumn=80
 endif
 
+" use Ctrl+arrow up/down to switch buffers
+noremap <C-Up>   :MBEbn<CR>
+noremap <C-Down> :MBEbp<CR>
+
 " Indent with Tab in normal and visual mode; dedent with Shift+Tab
 noremap <Tab> v>
 noremap <S-Tab> v<
