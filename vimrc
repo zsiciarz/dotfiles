@@ -115,8 +115,10 @@ noremap <S-Tab> v<
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
 
+" higlight tabs for indentation (Solarized-compatible colors)
 set list
 set listchars=tab:▸\ ,
+highlight SpecialKey cterm=none ctermfg=0 guifg=#073642 ctermbg=8 guibg=#002b36
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
