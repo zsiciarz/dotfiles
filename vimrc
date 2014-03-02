@@ -132,15 +132,8 @@ noremap <C-Down> :MBEbp<CR>
 " GRB: use fancy buffer closing that doesn't close the split
 cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
 
-" highlight trailing whitespace
-highlight ExtraWhitespace ctermbg=red guibg=red
-autocmd ColorScheme * highlight ExtraWhitespace guibg=red
-autocmd BufEnter * match ExtraWhitespace /\s\+$/
-autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
-autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
-
-" delete trailing whitespace
-autocmd BufWritePre * :%s/\s\+$//e
+" Opening files
+" =============
 
 " Toggle Vexplore with Ctrl-E
 function! ToggleVExplorer()
@@ -166,6 +159,7 @@ map <silent> <C-E> :call ToggleVExplorer()<CR>
 autocmd vimenter * call ToggleVExplorer()
 autocmd vimenter * wincmd l
 
+" netrw options
 let g:netrw_altv = 1
 let g:netrw_banner = 0
 let g:netrw_browse_split = 4
@@ -174,6 +168,16 @@ let g:netrw_list_hide = '^\.\S\+,\~$,\.pyc$,\.pyo$,__pycache__/,\.egg-info/'
 " disable mouse actions; see ~/.vim/after/ftplugin/netrw.vim for more
 let g:netrw_mousemaps = 0
 let g:netrw_winsize = 20
+
+" highlight trailing whitespace
+highlight ExtraWhitespace ctermbg=red guibg=red
+autocmd ColorScheme * highlight ExtraWhitespace guibg=red
+autocmd BufEnter * match ExtraWhitespace /\s\+$/
+autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
+autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
+
+" delete trailing whitespace
+autocmd BufWritePre * :%s/\s\+$//e
 
 " Airline
 let g:airline_powerline_fonts = 1
