@@ -175,12 +175,6 @@ inoremap <Nul> <C-x><C-o>
 " HTML AutoCloseTag
 autocmd FileType xhtml,xml,htmldjango so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
 
-" MiniBufExplorer
-" use Ctrl+arrows or Ctrl+Tab to switch buffers
-let g:miniBufExplMapWindowNavVim = 1
-let g:miniBufExplMapCTabSwitchBufs = 1
-let g:miniBufExplModSelTarget = 1
-
 " Syntastic
 let g:syntastic_python_flake8_args = '--ignore=E501'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
