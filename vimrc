@@ -5,6 +5,9 @@ filetype off
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
+" Plugin definitions
+" ==================
+
 " Vundle manages itself
 Bundle 'gmarik/vundle'
 
@@ -49,33 +52,11 @@ Bundle 'dag/vim2hs'
 " nginx
 Bundle 'evanmiller/nginx-vim-syntax'
 
-" Indentation
-" ===========
-"
-" preserve current indentation
-set autoindent
-" indent width
-set tabstop=4
-" > and < indent width
-set shiftwidth=4
-" backspace deletes 4 spaces
-set softtabstop=4
-" round indent to multiple of shiftwidth
-set shiftround
-
-" for gnome-terminal to work correctly with solarized
-set t_Co=256
-" enable syntax highlighting
-syntax enable
-" dark background for solarized
-set background=dark
-" the awesome color scheme
-colorscheme solarized
+" Basic options
+" ==============
 
 " enable switching between unsaved buffers
 set hidden
-" expand tabs to spaces
-set expandtab
 " highlight current line
 set cursorline
 " show matching bracket
@@ -96,29 +77,55 @@ set numberwidth=5
 set ruler
 " automatically change directory when opening a file
 set autochdir
-
 " enable mouse
 set mouse=a
+" enable filetype-specific plugins and indentation rules
+filetype plugin indent on
 
+" Colors
+" ======
+
+" for gnome-terminal to work correctly with solarized
+set t_Co=256
+" enable syntax highlighting
+syntax enable
+" dark background for solarized
+set background=dark
+" the awesome color scheme
+colorscheme solarized
 " print margin
 if exists('+colorcolumn')
     set colorcolumn=80
 endif
 
-" use Ctrl+arrow up/down to switch buffers
-noremap <C-Up>   :MBEbn<CR>
-noremap <C-Down> :MBEbp<CR>
+" Indentation
+" ===========
 
+" preserve current indentation
+set autoindent
+" indent width
+set tabstop=4
+" > and < indent width
+set shiftwidth=4
+" backspace deletes 4 spaces
+set softtabstop=4
+" round indent to multiple of shiftwidth
+set shiftround
+" expand tabs to spaces
+set expandtab
 " Indent with Tab in normal and visual mode; dedent with Shift+Tab
 noremap <Tab> v>
 noremap <S-Tab> v<
 vnoremap <Tab> >gv
 vnoremap <S-Tab> <gv
-
 " higlight tabs for indentation (Solarized-compatible colors)
 set list
 set listchars=tab:▸\ ,
 highlight SpecialKey cterm=none ctermfg=0 guifg=#073642 ctermbg=8 guibg=#002b36
+
+" use Ctrl+arrow up/down to switch buffers
+noremap <C-Up>   :MBEbn<CR>
+noremap <C-Down> :MBEbp<CR>
 
 " highlight trailing whitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
@@ -129,9 +136,6 @@ autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
 
 " delete trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
-
-" enable filetype-specific plugins and indentation rules
-filetype plugin indent on
 
 " Toggle Vexplore with Ctrl-E
 function! ToggleVExplorer()
