@@ -35,7 +35,6 @@ Bundle 'altercation/vim-colors-solarized'
 
 " Version control integration
 Bundle 'tpope/vim-fugitive'
-Bundle 'ludovicchabant/vim-lawrencium'
 
 " HTML and CSS plugins
 Bundle 'vim-scripts/HTML-AutoCloseTag'
