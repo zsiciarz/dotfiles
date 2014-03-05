@@ -26,11 +26,3 @@ Airline
 
 No fancy symbols? See https://github.com/Lokaltog/powerline-fonts for patched
 fonts.
-
-Jedi
-----
-
-To use `Jedi <https://github.com/davidhalter/jedi>`_ for semantic Python
-completion in Vim, install it with pip::
-
-    pip install jedi
