@@ -186,7 +186,7 @@ autocmd FileType xhtml,xml,htmldjango so ~/.vim/bundle/HTML-AutoCloseTag/ftplugi
 let g:syntastic_python_flake8_args = '--ignore=E501'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
-" disable docsting popup window when completing with Jedi
+" disable docstring popup window when completing with Jedi
 autocmd FileType python setlocal completeopt-=preview
 
 " Tagbar
