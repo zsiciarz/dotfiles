@@ -188,6 +188,8 @@ let g:syntastic_cpp_compiler_options = ' -std=c++11'
 
 " disable docstring popup window when completing with Jedi
 autocmd FileType python setlocal completeopt-=preview
+" go to definition in a new buffer, not tab
+let g:jedi#use_tabs_not_buffers = 0
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
