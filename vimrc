@@ -51,6 +51,9 @@ Bundle 'dag/vim2hs'
 " nginx
 Bundle 'evanmiller/nginx-vim-syntax'
 
+" ansible
+Bundle 'chase/vim-ansible-yaml'
+
 " Basic options
 " ==============
 
