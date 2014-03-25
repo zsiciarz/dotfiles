@@ -102,6 +102,14 @@ if exists('+colorcolumn')
     set colorcolumn=80
 endif
 
+" gVim tweaks
+" ===========
+
+" use patched Consolas font on Windows
+if has("gui_win32")
+    set guifont=Powerline\ Consolas:h12
+endif
+
 " Indentation
 " ===========
 
