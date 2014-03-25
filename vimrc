@@ -57,6 +57,8 @@ Bundle 'chase/vim-ansible-yaml'
 " Basic options
 " ==============
 
+set encoding=utf-8
+
 " highlight current line
 set cursorline
 " show matching bracket
