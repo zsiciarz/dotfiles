@@ -109,6 +109,10 @@ endif
 if has("gui_win32")
     set guifont=Powerline\ Consolas:h12
 endif
+" disable menu, toolbar and left scrollbar
+set guioptions-=m
+set guioptions-=T
+set guioptions-=L
 
 " Indentation
 " ===========
