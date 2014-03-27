@@ -84,7 +84,7 @@ set mouse=a
 " enable filetype-specific plugins and indentation rules
 filetype plugin indent on
 " ignore some (binary and whatnot) files
-set wildignore+=*/htmlcov/*,*/build/*,*/dist/*,*.so,*.o,*.pyc,*.pyo,*.swp
+set wildignore+=*/htmlcov/*,*/build/*,*/dist/*,*/attachments/*,*.so,*.o,*.pyc,*.pyo,*.swp
 
 " Colors
 " ======
