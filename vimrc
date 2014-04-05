@@ -88,7 +88,9 @@ set wildignore+=*/htmlcov/*,*/build/*,*/dist/*,*/attachments/*,*.so,*.o,*.pyc,*.
 " fix backspace on Windows
 set backspace=2
 " use forward slashes when expanding paths on Windows
-set shellslash
+if exists('+shellslash')
+    set shellslash
+endif
 
 " Colors
 " ======
