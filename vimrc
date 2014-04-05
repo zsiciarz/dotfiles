@@ -85,6 +85,8 @@ set mouse=a
 filetype plugin indent on
 " ignore some (binary and whatnot) files
 set wildignore+=*/htmlcov/*,*/build/*,*/dist/*,*/attachments/*,*.so,*.o,*.pyc,*.pyo,*.swp
+" fix backspace on Windows
+set backspace=2
 
 " Colors
 " ======
