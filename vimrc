@@ -91,6 +91,8 @@ set backspace=2
 if exists('+shellslash')
     set shellslash
 endif
+" don't fold code (personal preference)
+set nofoldenable
 
 " Colors
 " ======
