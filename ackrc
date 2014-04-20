@@ -3,6 +3,7 @@
 --ignore-dir=htmlcov
 --ignore-dir=coverage_html
 --ignore-dir=build
+--ignore-dir=dist
 --ignore-dir=debug
 --ignore-dir=release
 --ignore-dir=.tox
