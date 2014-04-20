@@ -26,6 +26,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'davidhalter/jedi-vim'
 Bundle 'majutsushi/tagbar'
 Bundle 'kien/ctrlp.vim'
+Bundle 'Shougo/vimproc.vim'
 
 " Python-related plugins
 Bundle 'jmcantrell/vim-virtualenv'
@@ -46,6 +47,7 @@ Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 
 " Haskell plugins
+Bundle 'eagletmt/ghcmod-vim'
 Bundle 'dag/vim2hs'
 
 " nginx
