@@ -26,3 +26,11 @@ Airline
 
 No fancy symbols? See https://github.com/Lokaltog/powerline-fonts for patched
 fonts.
+
+vimproc
+-------
+
+This plugin requires compilation after installing::
+
+    cd ~/.vim/bundle/vimproc.vim
+    make
