@@ -50,6 +50,9 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'eagletmt/ghcmod-vim'
 Bundle 'dag/vim2hs'
 
+" Rust support
+Bundle 'wting/rust.vim'
+
 " nginx
 Bundle 'evanmiller/nginx-vim-syntax'
 
