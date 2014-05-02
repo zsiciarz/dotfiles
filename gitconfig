@@ -5,6 +5,7 @@
     email = antyqjon@gmail.com
 [core]
     editor = vim
+    excludesfile = ~/.gitignore_global
 [alias]
     st = status
     dif = diff
