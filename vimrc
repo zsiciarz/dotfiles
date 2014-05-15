@@ -228,3 +228,4 @@ nmap <F8> :TagbarToggle<CR>
 " always expand Haskell enumerations, like derived instances
 let g:haskell_conceal_enumerations = 0
 
+set tags+=codex.tags;/
