@@ -3,61 +3,63 @@ set nocompatible
 filetype off
 
 set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+call vundle#begin()
 
 " Plugin definitions
 " ==================
 
 " Vundle manages itself
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
 " Improvements to vim commands and motions
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'rbgrouleff/bclose.vim'
+Plugin 'tpope/vim-repeat'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'rbgrouleff/bclose.vim'
 
 " 'vim as IDE' features
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'fholgado/minibufexpl.vim'
-Bundle 'bling/vim-airline'
-Bundle 'scrooloose/syntastic'
-Bundle 'mileszs/ack.vim'
-Bundle 'davidhalter/jedi-vim'
-Bundle 'majutsushi/tagbar'
-Bundle 'kien/ctrlp.vim'
-Bundle 'Shougo/vimproc.vim'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'fholgado/minibufexpl.vim'
+Plugin 'bling/vim-airline'
+Plugin 'scrooloose/syntastic'
+Plugin 'mileszs/ack.vim'
+Plugin 'davidhalter/jedi-vim'
+Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
+Plugin 'Shougo/vimproc.vim'
 
 " Python-related plugins
-Bundle 'housleyjk/vim-virtualenv'
+Plugin 'housleyjk/vim-virtualenv'
 
 " Color scheme
-Bundle 'altercation/vim-colors-solarized'
+Plugin 'altercation/vim-colors-solarized'
 
 " Version control integration
-Bundle 'tpope/vim-fugitive'
+Plugin 'tpope/vim-fugitive'
 
 " HTML and CSS plugins
-Bundle 'vim-scripts/HTML-AutoCloseTag'
-Bundle 'hail2u/vim-css3-syntax'
-Bundle 'ap/vim-css-color'
-Bundle 'groenewege/vim-less'
+Plugin 'vim-scripts/HTML-AutoCloseTag'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'ap/vim-css-color'
+Plugin 'groenewege/vim-less'
 
 " CoffeeScript
-Bundle 'kchmck/vim-coffee-script'
+Plugin 'kchmck/vim-coffee-script'
 
 " Haskell plugins
-Bundle 'eagletmt/ghcmod-vim'
-Bundle 'dag/vim2hs'
+Plugin 'eagletmt/ghcmod-vim'
+Plugin 'dag/vim2hs'
 
 " Rust support
-Bundle 'wting/rust.vim'
+Plugin 'wting/rust.vim'
 
 " nginx
-Bundle 'evanmiller/nginx-vim-syntax'
+Plugin 'evanmiller/nginx-vim-syntax'
 
 " ansible
-Bundle 'chase/vim-ansible-yaml'
+Plugin 'chase/vim-ansible-yaml'
+
+call vundle#end()
 
 " Basic options
 " ==============
