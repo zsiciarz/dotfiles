@@ -29,7 +29,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'Shougo/vimproc.vim'
 
 " Python-related plugins
-Bundle 'jmcantrell/vim-virtualenv'
+Bundle 'housleyjk/vim-virtualenv'
 
 " Color scheme
 Bundle 'altercation/vim-colors-solarized'
