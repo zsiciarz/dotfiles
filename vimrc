@@ -158,6 +158,8 @@ set hidden
 " use Ctrl+arrow up/down to switch buffers
 noremap <C-Up>   :MBEbn<CR>
 noremap <C-Down> :MBEbp<CR>
+" wrap around when using MBE movement commands
+let g:miniBufExplCycleArround = 1
 " GRB: use fancy buffer closing that doesn't close the split
 cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
 
