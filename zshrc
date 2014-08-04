@@ -60,3 +60,5 @@ alias gitka="gitk --all"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+export RUST_SRC_PATH="$HOME/Development/Rust/rust/src"
