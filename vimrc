@@ -233,3 +233,6 @@ nmap <F8> :TagbarToggle<CR>
 let g:haskell_conceal_enumerations = 0
 
 set tags+=codex.tags;/
+
+let g:racer_cmd = $HOME."/Development/Rust/racer/bin/racer"
+let $RUST_SRC_PATH = $HOME."/Development/Rust/rust/src"
