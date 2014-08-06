@@ -227,6 +227,7 @@ nmap <F8> :TagbarToggle<CR>
 " always expand Haskell enumerations, like derived instances
 let g:haskell_conceal_enumerations = 0
 
+" YouCompleteMe
 autocmd FileType python nnoremap <leader>d :YcmCompleter GoTo<CR>
 
 set tags+=codex.tags;/
