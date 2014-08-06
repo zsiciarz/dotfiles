@@ -27,6 +27,8 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
 Plugin 'Shougo/vimproc.vim'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " Python-related plugins
 Plugin 'housleyjk/vim-virtualenv'
@@ -229,6 +231,9 @@ let g:haskell_conceal_enumerations = 0
 
 " YouCompleteMe
 autocmd FileType python nnoremap <leader>d :YcmCompleter GoTo<CR>
+
+" UltiSnips
+let g:UltiSnipsExpandTrigger = '<C-j>'
 
 set tags+=codex.tags;/
 
