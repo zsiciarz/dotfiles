@@ -231,6 +231,8 @@ let g:haskell_conceal_enumerations = 0
 
 " YouCompleteMe
 autocmd FileType python nnoremap <leader>d :YcmCompleter GoTo<CR>
+" disable docstring popup window when completing Python code
+autocmd FileType python setlocal completeopt-=preview
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger = '<C-j>'
