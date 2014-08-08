@@ -230,6 +230,7 @@ nmap <F8> :TagbarToggle<CR>
 let g:haskell_conceal_enumerations = 0
 
 " YouCompleteMe
+let g:ycm_confirm_extra_conf = 0
 autocmd FileType python,cpp nnoremap <leader>d :YcmCompleter GoTo<CR>
 " disable docstring popup window when completing Python code
 autocmd FileType python setlocal completeopt-=preview
