@@ -6,6 +6,8 @@
 --ignore-dir=dist
 --ignore-dir=debug
 --ignore-dir=release
+--ignore-dir=target
+--ignore-dir=.cargo
 --ignore-dir=.tox
 --ignore-dir=.cabal-sandbox
 --ignore-file=is:.coverage
