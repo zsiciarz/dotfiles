@@ -61,6 +61,9 @@ Plugin 'evanmiller/nginx-vim-syntax'
 " ansible
 Plugin 'chase/vim-ansible-yaml'
 
+" Scheme/Clojure
+Plugin 'amdt/vim-niji'
+
 call vundle#end()
 
 " Basic options
