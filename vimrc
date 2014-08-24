@@ -168,6 +168,12 @@ let g:miniBufExplCycleArround = 1
 " GRB: use fancy buffer closing that doesn't close the split
 cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
 
+" vimdiff and Gdiff options
+" =========================
+
+" use filler lines and open diff in vertical splits
+set diffopt=filler,vertical
+
 " Opening files
 " =============
 
