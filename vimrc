@@ -46,7 +46,6 @@ Plugin 'ap/vim-css-color'
 Plugin 'groenewege/vim-less'
 
 " JavaScript and CoffeeScript
-Plugin 'jelera/vim-javascript-syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 
