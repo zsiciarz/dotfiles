@@ -10,6 +10,8 @@
     st = status
     dif = diff
     ready = rebase -i @{u}
+    vomit = commit
+    vommit = commit
 [rerere]
     enabled = true
 [help]
