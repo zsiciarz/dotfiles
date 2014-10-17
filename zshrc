@@ -62,3 +62,11 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 export RUST_SRC_PATH="$HOME/Development/Rust/rust/src"
+
+# Allow for running a command AND staying in interactive mode
+# see http://www.zsh.org/mla/users/2005/msg00599.html
+if [[ $1 == eval ]]
+then
+    "$@"
+    set --
+fi
