@@ -7,7 +7,7 @@
 \set HISTFILE ~/.psql_history- :DBNAME
 \set HISTSIZE 20000
 
-\set PROMPT1 '%n@%M:%> [%/] %# '
+\set PROMPT1 '%[%033[1;33;40m%]%n@%M:%>%[%033[0m%] [%[%033[0;34;40m%]%/%[%033[0m%]]%# '
 
 \pset linestyle unicode
 \pset border 1
