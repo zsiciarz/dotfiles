@@ -8,3 +8,6 @@
 \set HISTSIZE 20000
 
 \set PROMPT1 '%n@%M:%> [%/] %# '
+
+\pset linestyle unicode
+\pset border 1
