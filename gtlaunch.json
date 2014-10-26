@@ -114,6 +114,24 @@
             }
         ]
     },
+    "pgallery": {
+        "cwd": "~/Development/django-pgallery",
+        "prefix": "workon django-pgallery",
+        "tabs": [
+            {
+                "command": "vim",
+                "title": "editor"
+            },
+            {
+                "command": "make test",
+                "title": "test"
+            },
+            {
+                "command": "git status",
+                "title": "git"
+            }
+        ]
+    },
     "euler.rs": {
         "cwd": "~/Development/Rust/euler.rs",
         "tabs": [
