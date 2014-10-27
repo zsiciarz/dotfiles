@@ -199,8 +199,8 @@ function! ToggleVExplorer()
 endfunction
 map <silent> <C-E> :call ToggleVExplorer()<CR>
 
-autocmd vimenter * call ToggleVExplorer()
-autocmd vimenter * wincmd l
+" autocmd vimenter * call ToggleVExplorer()
+" autocmd vimenter * wincmd l
 
 " netrw options
 let g:netrw_altv = 1
