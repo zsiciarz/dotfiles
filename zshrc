@@ -45,7 +45,7 @@ export TERM=xterm-256color
 export LESS=-RFX
 
 # Customize to your needs...
-export PATH=$HOME/bin:$HOME/.cabal/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
+export PATH=$HOME/.local/bin:$HOME/bin:$HOME/.cabal/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 export WORKON_HOME=~/v
 source /usr/local/bin/virtualenvwrapper.sh
