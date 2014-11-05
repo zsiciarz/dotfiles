@@ -8,9 +8,8 @@ Vundle
 ::
 
     mkdir -p ~/.vim/bundle
-    git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-
-Afterwards open vim and run ``:BundleInstall``. Done!
+    git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    vim +PluginInstall +qall
 
 
 Notes
