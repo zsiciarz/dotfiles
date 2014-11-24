@@ -65,6 +65,9 @@ Plugin 'chase/vim-ansible-yaml'
 " Scheme/Clojure
 Plugin 'amdt/vim-niji'
 
+" Gradle
+Plugin 'tfnico/vim-gradle'
+
 call vundle#end()
 
 " Basic options
