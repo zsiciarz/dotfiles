@@ -100,7 +100,7 @@ set mouse=a
 " enable filetype-specific plugins and indentation rules
 filetype plugin indent on
 " ignore some (binary and whatnot) files and directories
-set wildignore+=*/htmlcov*,*/build/*,*/dist/*,*/attachments/*,*/node_modules*,*/target/*,*.so,*.o,*.pyc,*.pyo,*.swp
+set wildignore+=*/htmlcov*,*/build/*,*/dist/*,*/attachments/*,*/node_modules*,*/target/*,*.so,*.o,*.pyc,*.pyo,*.swp,*.jar
 " fix backspace on Windows
 set backspace=2
 " use forward slashes when expanding paths on Windows
