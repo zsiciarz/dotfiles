@@ -68,6 +68,9 @@ Plugin 'amdt/vim-niji'
 " Gradle
 Plugin 'tfnico/vim-gradle'
 
+" TOML
+Plugin 'cespare/vim-toml'
+
 call vundle#end()
 
 " Basic options
