@@ -148,5 +148,22 @@
                 "title": "git"
             }
         ]
+    },
+    "24daysofrust": {
+        "cwd": "~/Development/Rust/24daysofrust",
+        "tabs": [
+            {
+                "command": "vim",
+                "title": "editor"
+            },
+            {
+                "command": "cargo build",
+                "title": "cargo"
+            },
+            {
+                "command": "git status",
+                "title": "git"
+            }
+        ]
     }
 }
