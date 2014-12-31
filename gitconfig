@@ -2,7 +2,7 @@
     ui = true
 [user]
     name = Zbigniew Siciarz
-    email = antyqjon@gmail.com
+    email = zbigniew@siciarz.net
 [core]
     editor = vim
     excludesfile = ~/.gitignore_global
