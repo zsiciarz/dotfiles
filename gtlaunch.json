@@ -2,38 +2,12 @@
     "gtlaunch": {
         "prefix": "workon gtlaunch",
         "cwd": "~/Development/gtlaunch",
-        "tabs": [
-            {
-                "command": "vim",
-                "title": "editor"
-            },
-            {
-                "command": "python tests.py",
-                "title": "tests"
-            },
-            {
-                "command": "git status",
-                "title": "git"
-            }
-        ]
+        "tabs": ["vim", "python tests.py", "git status"]
     },
     "siciarz": {
         "prefix": "workon siciarz.net",
         "cwd": "~/Development/siciarz.net",
-        "tabs": [
-            {
-                "command": "vim",
-                "title": "editor"
-            },
-            {
-                "command": "python manage.py runserver",
-                "title": "runserver"
-            },
-            {
-                "command": "git status",
-                "title": "git"
-            }
-        ]
+        "tabs": ["vim", "python manage.py runserver", "git status"]
     },
     "variablestars": {
         "prefix": "workon variablestars.net",
@@ -60,20 +34,7 @@
     "aquila-dsp.org": {
         "prefix": "workon aquila-dsp.org",
         "cwd": "~/Development/aquila-dsp.org",
-        "tabs": [
-            {
-                "command": "vim",
-                "title": "editor"
-            },
-            {
-                "command": "python manage.py runserver 0.0.0.0:8000",
-                "title": "runserver"
-            },
-            {
-                "command": "git status",
-                "title": "git"
-            }
-        ]
+        "tabs": ["vim", "python manage.py runserver", "git status"]
     },
     "aquila": {
         "cwd": "~/Development/aquila/aquila",
@@ -99,71 +60,19 @@
     "envelope": {
         "cwd": "~/Development/django-envelope",
         "prefix": "workon django-envelope",
-        "tabs": [
-            {
-                "command": "vim",
-                "title": "editor"
-            },
-            {
-                "command": "make test",
-                "title": "test"
-            },
-            {
-                "command": "git status",
-                "title": "git"
-            }
-        ]
+        "tabs": ["vim", "make test", "git status"]
     },
     "pgallery": {
         "cwd": "~/Development/django-pgallery",
         "prefix": "workon django-pgallery",
-        "tabs": [
-            {
-                "command": "vim",
-                "title": "editor"
-            },
-            {
-                "command": "make test",
-                "title": "test"
-            },
-            {
-                "command": "git status",
-                "title": "git"
-            }
-        ]
+        "tabs": ["vim", "make test", "git status"]
     },
     "euler.rs": {
         "cwd": "~/Development/Rust/euler.rs",
-        "tabs": [
-            {
-                "command": "vim",
-                "title": "editor"
-            },
-            {
-                "command": "cargo build",
-                "title": "cargo"
-            },
-            {
-                "command": "git status",
-                "title": "git"
-            }
-        ]
+        "tabs": ["vim", "cargo build", "git status"]
     },
     "24daysofrust": {
         "cwd": "~/Development/Rust/24daysofrust",
-        "tabs": [
-            {
-                "command": "vim",
-                "title": "editor"
-            },
-            {
-                "command": "cargo build",
-                "title": "cargo"
-            },
-            {
-                "command": "git status",
-                "title": "git"
-            }
-        ]
+        "tabs": ["vim", "cargo build", "git status"]
     }
 }
