@@ -41,6 +41,8 @@ zstyle ':completion:*:rm:*:(all-|)files' ignored-patterns
 # 256 colors in terminal to make Solarized look better in Vim
 export TERM=xterm-256color
 
+export EDITOR='vim'
+
 # preserve color output with less
 export LESS=-RFX
 
