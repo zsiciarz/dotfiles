@@ -51,6 +51,9 @@ Plugin 'groenewege/vim-less'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 
+" PostgreSQL
+Plugin 'exu/pgsql.vim'
+
 " Haskell plugins
 Plugin 'eagletmt/ghcmod-vim'
 Plugin 'dag/vim2hs'
@@ -260,3 +263,5 @@ set tags+=codex.tags;/
 
 let g:racer_cmd = $HOME."/Development/Rust/racer/target/release/racer"
 let $RUST_SRC_PATH = $HOME."/Development/Rust/rust/src"
+
+let g:sql_type_default = 'pgsql'
