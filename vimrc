@@ -59,7 +59,7 @@ Plugin 'eagletmt/ghcmod-vim'
 Plugin 'dag/vim2hs'
 
 " Rust support
-Plugin 'wting/rust.vim'
+Plugin 'rust-lang/rust.vim'
 
 " nginx
 Plugin 'evanmiller/nginx-vim-syntax'
