@@ -51,7 +51,6 @@ export PATH=$HOME/.local/bin:$HOME/bin:$HOME/.cabal/bin:/usr/lib/lightdm/lightdm
 
 export WORKON_HOME=~/v
 source /usr/local/bin/virtualenvwrapper.sh
-export PYTHONPATH="$PYTHONPATH:$HOME/Development/"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
