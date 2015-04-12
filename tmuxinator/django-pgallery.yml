@@ -23,5 +23,5 @@ windows:
       layout: main-vertical
       panes:
         - vim
-        - make test
+        - make coverage
         - git pull
