@@ -61,6 +61,9 @@ Plugin 'dag/vim2hs'
 " Rust support
 Plugin 'rust-lang/rust.vim'
 
+" Nim support
+Plugin 'zah/nim.vim'
+
 " nginx
 Plugin 'evanmiller/nginx-vim-syntax'
 
