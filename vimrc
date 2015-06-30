@@ -64,6 +64,9 @@ Plugin 'rust-lang/rust.vim'
 " Nim support
 Plugin 'zah/nim.vim'
 
+" Elixir
+Plugin 'elixir-lang/vim-elixir'
+
 " nginx
 Plugin 'evanmiller/nginx-vim-syntax'
 
