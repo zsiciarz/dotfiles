@@ -12,6 +12,7 @@ fetch =
 hgext.highlight =
 hgk =
 mq =
+pager =
 progress =
 rebase =
 hgext.record =
@@ -20,6 +21,9 @@ hgshelve = ~/.hgext/hgshelve.py
 
 [bookmarks]
 track.current = True
+
+[pager]
+pager = LESS='FRX' less
 
 [web]
 pygments_style = friendly
