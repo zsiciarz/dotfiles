@@ -55,7 +55,7 @@ Plugin 'kchmck/vim-coffee-script'
 Plugin 'exu/pgsql.vim'
 
 " Haskell plugins
-Plugin 'eagletmt/ghcmod-vim'
+" Plugin 'eagletmt/ghcmod-vim'
 Plugin 'dag/vim2hs'
 
 " Rust support
