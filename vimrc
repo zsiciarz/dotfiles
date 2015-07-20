@@ -67,6 +67,7 @@ Plugin 'zah/nim.vim'
 
 " Elixir
 Plugin 'elixir-lang/vim-elixir'
+Plugin 'mattonrails/vim-mix'
 
 " nginx
 Plugin 'evanmiller/nginx-vim-syntax'
