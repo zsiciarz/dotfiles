@@ -60,6 +60,7 @@ Plugin 'dag/vim2hs'
 
 " Rust support
 Plugin 'rust-lang/rust.vim'
+Plugin 'phildawes/racer'
 
 " Nim support
 Plugin 'zah/nim.vim'
