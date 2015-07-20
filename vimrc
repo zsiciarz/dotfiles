@@ -248,6 +248,7 @@ autocmd FileType xhtml,xml,htmldjango so ~/.vim/bundle/HTML-AutoCloseTag/ftplugi
 let g:syntastic_python_flake8_args = '--ignore=E501'
 let g:syntastic_cpp_compiler_options = ' -std=c++11'
 let g:syntastic_haskell_ghc_mod_args = '-g -fno-warn-type-defaults'
+let g:syntastic_javascript_checkers = ['eslint']
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
