@@ -50,6 +50,7 @@ Plugin 'groenewege/vim-less'
 " JavaScript and CoffeeScript
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
+Plugin 'mxw/vim-jsx'
 
 " PostgreSQL
 Plugin 'exu/pgsql.vim'
