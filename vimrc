@@ -123,6 +123,8 @@ if exists('+shellslash')
 endif
 " don't fold code (personal preference)
 set nofoldenable
+" copy backup files instead of moving; fixes filesystem watchers
+set backupcopy=yes
 
 " Colors
 " ======
