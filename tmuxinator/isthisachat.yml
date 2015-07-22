@@ -20,5 +20,6 @@ windows:
       layout: main-vertical
       panes:
         - vim
-        - make
+        - make serve
+        - make watch
         - git pull
