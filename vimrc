@@ -43,6 +43,7 @@ Plugin 'tpope/vim-fugitive'
 
 " HTML and CSS plugins
 Plugin 'vim-scripts/HTML-AutoCloseTag'
+Plugin 'Valloric/MatchTagAlways'
 Plugin 'hail2u/vim-css3-syntax'
 Plugin 'ap/vim-css-color'
 Plugin 'groenewege/vim-less'
