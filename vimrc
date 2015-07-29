@@ -9,7 +9,7 @@ call vundle#begin()
 " ==================
 
 " Vundle manages itself
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Improvements to vim commands and motions
 Plugin 'tpope/vim-repeat'
