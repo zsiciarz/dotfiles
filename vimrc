@@ -277,3 +277,7 @@ let $RUST_SRC_PATH = $HOME."/Development/Rust/rust/src"
 let g:sql_type_default = 'pgsql'
 
 let g:jsx_ext_required = 0
+
+if executable('ag')
+  let g:ackprg = 'ag --vimgrep'
+endif
