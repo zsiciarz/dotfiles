@@ -16,6 +16,7 @@ Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'rbgrouleff/bclose.vim'
+Plugin 'michaeljsmith/vim-indent-object'
 
 " 'vim as IDE' features
 Plugin 'scrooloose/nerdcommenter'
