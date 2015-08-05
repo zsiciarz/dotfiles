@@ -23,5 +23,5 @@ windows:
       layout: main-vertical
       panes:
         - vim
-        - cabal test --show-details=streaming
+        - stack test
         - git pull
