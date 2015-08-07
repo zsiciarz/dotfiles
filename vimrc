@@ -282,3 +282,13 @@ let g:jsx_ext_required = 0
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
+
+let g:tmuxline_preset = {
+      \'a'    : '#S',
+      \'win'  : ['#I', '#W'],
+      \'cwin' : ['#I', '#W'],
+      \'x'    : '#(t now)',
+      \'y'    : ['%Y-%m-%d', '%H:%M'],
+      \'z'    : '#h',
+      \'options': {'status-justify': 'left'}
+      \}
