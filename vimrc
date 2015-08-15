@@ -32,6 +32,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'Shougo/vimproc.vim'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
+Plugin 'janko-m/vim-test'
 
 " Python-related plugins
 Plugin 'housleyjk/vim-virtualenv'
@@ -292,3 +293,5 @@ let g:tmuxline_preset = {
       \'z'    : '#h',
       \'options': {'status-justify': 'left'}
       \}
+
+nmap <silent> <leader>t :TestNearest<CR>
