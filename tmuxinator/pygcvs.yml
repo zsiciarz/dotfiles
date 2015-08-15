@@ -23,5 +23,5 @@ windows:
       layout: main-vertical
       panes:
         - vim
-        - nosetests --with-coverage
+        - py.test --cov
         - git pull
