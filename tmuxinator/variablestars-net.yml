@@ -24,5 +24,6 @@ windows:
       panes:
         - vim
         - python manage.py runserver
-        - coverage run manage.py test --keepdb
+        - make test
+        - make watch
         - git pull
