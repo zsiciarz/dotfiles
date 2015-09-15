@@ -62,6 +62,12 @@ alias gitka="gitk --all"
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
+export PYENV_ROOT="$HOME/.pyenv"
+if [ -d "$PYENV_ROOT" ]; then
+    export PATH="$PYENV_ROOT/bin:$PATH"
+    eval "$(pyenv init -)"
+fi
+
 export RUST_SRC_PATH="$HOME/Development/Rust/rust/src"
 
 # Allow for running a command AND staying in interactive mode
