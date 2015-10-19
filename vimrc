@@ -129,6 +129,8 @@ endif
 set nofoldenable
 " copy backup files instead of moving; fixes filesystem watchers
 set backupcopy=yes
+" don't clutter local directory with backup files
+set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 
 " Colors
 " ======
