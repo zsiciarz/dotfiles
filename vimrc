@@ -298,3 +298,5 @@ let g:tmuxline_preset = {
       \}
 
 nmap <silent> <leader>t :TestNearest<CR>
+
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
