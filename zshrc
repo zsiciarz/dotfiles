@@ -69,6 +69,7 @@ if [ -d "$PYENV_ROOT" ]; then
 fi
 
 export RUST_SRC_PATH="$HOME/Development/Rust/rust/src"
+export PATH="$HOME/.multirust/toolchains/nightly/cargo/bin:$PATH"
 
 # Allow for running a command AND staying in interactive mode
 # see http://www.zsh.org/mla/users/2005/msg00599.html
