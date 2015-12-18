@@ -278,6 +278,7 @@ set tags+=codex.tags;/
 
 let g:racer_cmd = $HOME."/Development/Rust/racer/target/release/racer"
 let $RUST_SRC_PATH = $HOME."/Development/Rust/rust/src"
+let g:rustfmt_autosave = 1
 
 let g:sql_type_default = 'pgsql'
 
