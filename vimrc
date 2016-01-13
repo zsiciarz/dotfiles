@@ -65,7 +65,6 @@ Plugin 'dag/vim2hs'
 
 " Rust support
 Plugin 'rust-lang/rust.vim'
-Plugin 'phildawes/racer'
 
 " Nim support
 Plugin 'zah/nim.vim'
@@ -276,8 +275,7 @@ let g:UltiSnipsExpandTrigger = '<C-j>'
 
 set tags+=codex.tags;/
 
-let g:racer_cmd = $HOME."/Development/Rust/racer/target/release/racer"
-let $RUST_SRC_PATH = $HOME."/Development/Rust/rust/src"
+let g:ycm_rust_src_path = $HOME."/Development/Rust/rust/src"
 let g:rustfmt_autosave = 1
 
 let g:sql_type_default = 'pgsql'
