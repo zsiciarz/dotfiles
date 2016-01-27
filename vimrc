@@ -85,6 +85,9 @@ Plugin 'tfnico/vim-gradle'
 " TOML
 Plugin 'cespare/vim-toml'
 
+" RAML
+Plugin 'IN3D/vim-raml'
+
 call vundle#end()
 
 " Basic options
