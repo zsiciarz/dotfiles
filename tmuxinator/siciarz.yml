@@ -25,4 +25,5 @@ windows:
         - vim
         - python manage.py runserver
         - make test
+        - make watch
         - git pull
