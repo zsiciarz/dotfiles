@@ -55,7 +55,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
 Plugin 'mxw/vim-jsx'
-Plugin 'lambdatoast/elm.vim'
+Plugin 'elmcast/elm-vim'
 
 " PostgreSQL
 Plugin 'exu/pgsql.vim'
