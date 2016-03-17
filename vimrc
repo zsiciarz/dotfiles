@@ -304,3 +304,6 @@ let g:tmuxline_preset = {
 nmap <silent> <leader>t :TestNearest<CR>
 
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+
+" autoformat Elm code on save
+let g:elm_format_autosave = 1
