@@ -271,6 +271,7 @@ let g:haskell_conceal_enumerations = 0
 
 " YouCompleteMe
 let g:ycm_confirm_extra_conf = 0
+let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 autocmd FileType python,cpp,rust nnoremap <leader>d :YcmCompleter GoTo<CR>
 " disable docstring popup window when completing Python code
 autocmd FileType python,cpp,javascript setlocal completeopt-=preview
