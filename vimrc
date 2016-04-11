@@ -1,95 +1,91 @@
 set nocompatible
 
-filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/bundle')
 
 " Plugin definitions
 " ==================
 
-" Vundle manages itself
-Plugin 'VundleVim/Vundle.vim'
-
 " Improvements to vim commands and motions
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-unimpaired'
-Plugin 'rbgrouleff/bclose.vim'
-Plugin 'michaeljsmith/vim-indent-object'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-unimpaired'
+Plug 'rbgrouleff/bclose.vim'
+Plug 'michaeljsmith/vim-indent-object'
 
 " 'vim as IDE' features
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'fholgado/minibufexpl.vim'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'edkolev/tmuxline.vim'
-Plugin 'Keithbsmiley/tmux.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'rking/ag.vim'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'majutsushi/tagbar'
-Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'Shougo/vimproc.vim'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-Plugin 'janko-m/vim-test'
+Plug 'scrooloose/nerdcommenter'
+Plug 'fholgado/minibufexpl.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'edkolev/tmuxline.vim'
+Plug 'Keithbsmiley/tmux.vim'
+Plug 'scrooloose/syntastic'
+Plug 'rking/ag.vim'
+Plug 'Valloric/YouCompleteMe'
+Plug 'majutsushi/tagbar'
+Plug 'ctrlpvim/ctrlp.vim'
+Plug 'Shougo/vimproc.vim'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+Plug 'janko-m/vim-test'
 
 " Python-related plugins
-Plugin 'housleyjk/vim-virtualenv'
+Plug 'housleyjk/vim-virtualenv'
 
 " Color scheme
-Plugin 'altercation/vim-colors-solarized'
+Plug 'altercation/vim-colors-solarized'
 
 " Version control integration
-Plugin 'tpope/vim-fugitive'
+Plug 'tpope/vim-fugitive'
 
 " HTML and CSS plugins
-Plugin 'vim-scripts/HTML-AutoCloseTag'
-Plugin 'Valloric/MatchTagAlways'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'ap/vim-css-color'
-Plugin 'groenewege/vim-less'
+Plug 'vim-scripts/HTML-AutoCloseTag'
+Plug 'Valloric/MatchTagAlways'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'ap/vim-css-color'
+Plug 'groenewege/vim-less'
 
 " JavaScript and CoffeeScript
-Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'mxw/vim-jsx'
-Plugin 'elmcast/elm-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'kchmck/vim-coffee-script'
+Plug 'mxw/vim-jsx'
+Plug 'elmcast/elm-vim'
 
 " PostgreSQL
-Plugin 'exu/pgsql.vim'
+Plug 'exu/pgsql.vim'
 
 " Haskell plugins
-Plugin 'eagletmt/ghcmod-vim'
-Plugin 'dag/vim2hs'
+Plug 'eagletmt/ghcmod-vim'
+Plug 'dag/vim2hs'
 
 " Rust support
-Plugin 'rust-lang/rust.vim'
+Plug 'rust-lang/rust.vim'
 
 " Nim support
-Plugin 'zah/nim.vim'
+Plug 'zah/nim.vim'
 
 " Elixir
-Plugin 'elixir-lang/vim-elixir'
-Plugin 'mattonrails/vim-mix'
+Plug 'elixir-lang/vim-elixir'
+Plug 'mattonrails/vim-mix'
 
 " nginx
-Plugin 'evanmiller/nginx-vim-syntax'
+Plug 'evanmiller/nginx-vim-syntax'
 
 " ansible
-Plugin 'chase/vim-ansible-yaml'
+Plug 'chase/vim-ansible-yaml'
 
 " Gradle
-Plugin 'tfnico/vim-gradle'
+Plug 'tfnico/vim-gradle'
 
 " TOML
-Plugin 'cespare/vim-toml'
+Plug 'cespare/vim-toml'
 
 " RAML
-Plugin 'IN3D/vim-raml'
+Plug 'IN3D/vim-raml'
 
-call vundle#end()
+Plug 'zsiciarz/caddy.vim'
+
+call plug#end()
 
 " Basic options
 " ==============
