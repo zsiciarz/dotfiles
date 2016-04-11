@@ -28,7 +28,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'Keithbsmiley/tmux.vim'
 Plug 'scrooloose/syntastic'
 Plug 'rking/ag.vim'
-Plug 'Valloric/YouCompleteMe'
+Plug 'Valloric/YouCompleteMe', { 'for': ['python', 'javascript', 'rust'] }
 Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/vimproc.vim'
@@ -273,6 +273,7 @@ nmap <F8> :TagbarToggle<CR>
 let g:haskell_conceal_enumerations = 0
 
 " YouCompleteMe
+autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable() | endif
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_path_to_python_interpreter = '/usr/bin/python'
 autocmd FileType python,cpp,rust nnoremap <leader>d :YcmCompleter GoTo<CR>
