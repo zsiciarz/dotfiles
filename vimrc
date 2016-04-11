@@ -31,7 +31,7 @@ Plug 'rking/ag.vim'
 Plug 'Valloric/YouCompleteMe', { 'for': ['python', 'javascript', 'rust'] }
 Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'Shougo/vimproc.vim'
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'janko-m/vim-test'
