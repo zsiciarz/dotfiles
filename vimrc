@@ -315,3 +315,4 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 let g:elm_format_autosave = 1
 
 nnoremap <silent> <leader>aw :ArgWrap<CR>
+let g:argwrap_tail_comma = 1
