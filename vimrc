@@ -35,6 +35,7 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 Plug 'janko-m/vim-test'
+Plug 'FooSoft/vim-argwrap'
 
 " Python-related plugins
 Plug 'housleyjk/vim-virtualenv'
@@ -312,3 +313,5 @@ let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
 " autoformat Elm code on save
 let g:elm_format_autosave = 1
+
+nnoremap <silent> <leader>aw :ArgWrap<CR>
