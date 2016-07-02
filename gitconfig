@@ -20,3 +20,5 @@
     default = simple
 [pull]
     ff = only
+[diff]
+    compactionHeuristic = true
