@@ -288,7 +288,7 @@ let g:UltiSnipsExpandTrigger = '<C-j>'
 set tags+=codex.tags;/
 
 let g:ycm_rust_src_path = $HOME."/Development/Rust/rust/src"
-" let g:rustfmt_autosave = 1
+let g:rustfmt_autosave = 1
 
 let g:sql_type_default = 'pgsql'
 
