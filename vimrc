@@ -28,7 +28,7 @@ Plug 'edkolev/tmuxline.vim'
 Plug 'Keithbsmiley/tmux.vim'
 Plug 'scrooloose/syntastic'
 Plug 'rking/ag.vim'
-Plug 'Valloric/YouCompleteMe', { 'for': ['python', 'javascript', 'rust'] }
+Plug 'Valloric/YouCompleteMe'
 Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
