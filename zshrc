@@ -27,9 +27,6 @@ alias ack=ack-grep
 alias gfo="git fetch origin"
 alias gitka="gitk --all"
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
 export PYENV_ROOT="$HOME/.pyenv"
 if [ -d "$PYENV_ROOT" ]; then
     export PATH="$PYENV_ROOT/bin:$PATH"
@@ -47,3 +44,7 @@ then
     "$@"
     set --
 fi
+
+export NVM_DIR="/home/zbigniewsiciarz/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use  # This loads nvm
+export PATH=$NVM_DIR/versions/node/v6.2.0/bin/:$PATH
