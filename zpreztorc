@@ -31,7 +31,6 @@ zstyle ':prezto:module:syntax-highlighting' highlighters \
   'brackets' \
   'pattern' \
   'line' \
-  'cursor' \
   'root'
 
 zstyle ':prezto:module:terminal' auto-title 'yes'
