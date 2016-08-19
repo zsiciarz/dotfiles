@@ -40,6 +40,7 @@ Plug 'FooSoft/vim-argwrap'
 " Python-related plugins
 Plug 'housleyjk/vim-virtualenv'
 Plug 'raimon49/requirements.txt.vim'
+Plug 'fisadev/vim-isort'
 
 " Color scheme
 Plug 'altercation/vim-colors-solarized'
