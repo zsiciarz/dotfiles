@@ -40,7 +40,6 @@ Plug 'FooSoft/vim-argwrap'
 " Python-related plugins
 Plug 'housleyjk/vim-virtualenv'
 Plug 'raimon49/requirements.txt.vim'
-Plug 'fisadev/vim-isort'
 
 " Color scheme
 Plug 'altercation/vim-colors-solarized'
@@ -318,3 +317,5 @@ let g:elm_format_autosave = 1
 
 nnoremap <silent> <leader>aw :ArgWrap<CR>
 let g:argwrap_tail_comma = 1
+
+let test#python#djangotest#options = '--keepdb'
