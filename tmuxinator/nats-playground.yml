@@ -1,0 +1,12 @@
+# ~/.tmuxinator/nats-playground.yml
+
+name: nats-playground
+root: ~/Development/nats-playground
+
+windows:
+  - main:
+      layout: main-vertical
+      panes:
+        - vim
+        - gnatsd -DV
+        - git pull
