@@ -48,7 +48,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
 
 " HTML and CSS plugins
-Plug 'vim-scripts/HTML-AutoCloseTag'
 Plug 'Valloric/MatchTagAlways'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'ap/vim-css-color'
@@ -257,9 +256,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Airline
 let g:airline_powerline_fonts = 1
-
-" HTML AutoCloseTag
-autocmd FileType xhtml,xml,htmldjango so ~/.vim/bundle/HTML-AutoCloseTag/ftplugin/html_autoclosetag.vim
 
 " Syntastic
 let g:syntastic_python_flake8_args = '--ignore=E501'
