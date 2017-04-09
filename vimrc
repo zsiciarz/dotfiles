@@ -51,9 +51,8 @@ Plug 'hail2u/vim-css3-syntax'
 Plug 'ap/vim-css-color'
 Plug 'groenewege/vim-less'
 
-" JavaScript and CoffeeScript
+" JavaScript and other frontend languages
 Plug 'pangloss/vim-javascript'
-Plug 'kchmck/vim-coffee-script'
 Plug 'mxw/vim-jsx'
 Plug 'elmcast/elm-vim'
 
@@ -74,8 +73,9 @@ Plug 'zah/nim.vim'
 Plug 'elixir-lang/vim-elixir'
 Plug 'mattonrails/vim-mix'
 
-" nginx
+" server configuration
 Plug 'evanmiller/nginx-vim-syntax'
+Plug 'zsiciarz/caddy.vim'
 
 " ansible
 Plug 'chase/vim-ansible-yaml'
@@ -89,7 +89,6 @@ Plug 'cespare/vim-toml'
 " RAML
 Plug 'IN3D/vim-raml'
 
-Plug 'zsiciarz/caddy.vim'
 
 call plug#end()
 
@@ -149,9 +148,7 @@ set background=dark
 " the awesome color scheme
 colorscheme solarized
 " print margin
-if exists('+colorcolumn')
-    set colorcolumn=80
-endif
+set colorcolumn=80
 
 " gVim tweaks
 " ===========
@@ -201,33 +198,6 @@ noremap <C-Down> :bp<CR>
 " use filler lines and open diff in vertical splits
 set diffopt=filler,vertical
 
-" Opening files
-" =============
-
-" Toggle Vexplore with Ctrl-E
-function! ToggleVExplorer()
-  if exists("t:expl_buf_num")
-      let expl_win_num = bufwinnr(t:expl_buf_num)
-      if expl_win_num != -1
-          let cur_win_nr = winnr()
-          exec expl_win_num . 'wincmd w'
-          close
-          exec cur_win_nr . 'wincmd w'
-          unlet t:expl_buf_num
-      else
-          unlet t:expl_buf_num
-      endif
-  else
-      exec '1wincmd w'
-      Vexplore
-      let t:expl_buf_num = bufnr("%")
-  endif
-endfunction
-map <silent> <C-E> :call ToggleVExplorer()<CR>
-
-" autocmd vimenter * call ToggleVExplorer()
-" autocmd vimenter * wincmd l
-
 " netrw options
 let g:netrw_altv = 1
 let g:netrw_banner = 0
@@ -269,16 +239,14 @@ let g:haskell_conceal_enumerations = 0
 autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable() | endif
 let g:ycm_confirm_extra_conf = 0
 let g:ycm_python_binary_path = 'python'
+let g:ycm_rust_src_path = $HOME."/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
 autocmd FileType python,cpp,rust nnoremap <leader>d :YcmCompleter GoTo<CR>
-" disable docstring popup window when completing Python code
+" disable docstring popup window when completing code
 autocmd FileType python,cpp,javascript setlocal completeopt-=preview
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger = '<C-j>'
 
-set tags+=codex.tags;/
-
-let g:ycm_rust_src_path = $HOME."/Development/Rust/rust/src"
 let g:rustfmt_autosave = 1
 
 let g:sql_type_default = 'pgsql'
@@ -299,7 +267,9 @@ let g:tmuxline_preset = {
       \'options': {'status-justify': 'left'}
       \}
 
+" \t to run a single test nearest to the cursor
 nmap <silent> <leader>t :TestNearest<CR>
+let test#python#djangotest#options = '--keepdb'
 
 let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
 
@@ -308,5 +278,3 @@ let g:elm_format_autosave = 1
 
 nnoremap <silent> <leader>aw :ArgWrap<CR>
 let g:argwrap_tail_comma = 1
-
-let test#python#djangotest#options = '--keepdb'
