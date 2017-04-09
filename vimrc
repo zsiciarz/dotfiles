@@ -21,7 +21,6 @@ Plug 'michaeljsmith/vim-indent-object'
 
 " 'vim as IDE' features
 Plug 'scrooloose/nerdcommenter'
-Plug 'fholgado/minibufexpl.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
@@ -194,12 +193,8 @@ highlight SpecialKey cterm=none ctermfg=0 guifg=#073642 ctermbg=8 guibg=#002b36
 " enable switching between unsaved buffers
 set hidden
 " use Ctrl+arrow up/down to switch buffers
-noremap <C-Up>   :MBEbn<CR>
-noremap <C-Down> :MBEbp<CR>
-" wrap around when using MBE movement commands
-let g:miniBufExplCycleArround = 1
-" GRB: use fancy buffer closing that doesn't close the split
-cnoremap <expr> bd (getcmdtype() == ':' ? 'Bclose' : 'bd')
+noremap <C-Up>   :bn<CR>
+noremap <C-Down> :bp<CR>
 
 " vimdiff and Gdiff options
 " =========================
@@ -256,6 +251,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 " Airline
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
 
 " Syntastic
 let g:syntastic_python_flake8_args = '--ignore=E501'
