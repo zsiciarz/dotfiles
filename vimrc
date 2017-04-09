@@ -16,7 +16,6 @@ call plug#begin('~/.vim/bundle')
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'rbgrouleff/bclose.vim'
 Plug 'michaeljsmith/vim-indent-object'
 
 " 'vim as IDE' features
