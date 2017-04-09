@@ -38,7 +38,7 @@ Plug 'janko-m/vim-test'
 Plug 'FooSoft/vim-argwrap'
 
 " Python-related plugins
-Plug 'housleyjk/vim-virtualenv'
+Plug 'jmcantrell/vim-virtualenv'
 Plug 'raimon49/requirements.txt.vim'
 
 " Color scheme
