@@ -76,6 +76,7 @@ Plug 'mattonrails/vim-mix'
 " server configuration
 Plug 'chr4/nginx.vim'
 Plug 'zsiciarz/caddy.vim'
+Plug 'chr4/sslsecure.vim'
 
 " ansible
 Plug 'chase/vim-ansible-yaml'
