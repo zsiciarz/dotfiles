@@ -74,7 +74,7 @@ Plug 'elixir-lang/vim-elixir'
 Plug 'mattonrails/vim-mix'
 
 " server configuration
-Plug 'evanmiller/nginx-vim-syntax'
+Plug 'chr4/nginx.vim'
 Plug 'zsiciarz/caddy.vim'
 
 " ansible
