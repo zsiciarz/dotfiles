@@ -33,7 +33,6 @@ if [ -d "$PYENV_ROOT" ]; then
     eval "$(pyenv init -)"
 fi
 
-export RUST_NEW_ERROR_FORMAT=true
 export RUST_SRC_PATH="$HOME/Development/Rust/rust/src"
 export PATH="$HOME/.cargo/bin:$PATH"
 
