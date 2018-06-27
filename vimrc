@@ -219,6 +219,9 @@ autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
 " delete trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
 
+" use 2 spaces in YAML files, every time
+autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
