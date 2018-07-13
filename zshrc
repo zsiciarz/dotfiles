@@ -33,6 +33,8 @@ if [ -d "$PYENV_ROOT" ]; then
     eval "$(pyenv init -)"
 fi
 
+[ -s "$HOME/bin/tmuxinator.zsh" ] && . $HOME/bin/tmuxinator.zsh
+
 export RUST_SRC_PATH="$HOME/Development/Rust/rust/src"
 export PATH="$HOME/.cargo/bin:$PATH"
 
