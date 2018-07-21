@@ -66,9 +66,6 @@ Plug 'dag/vim2hs'
 " Rust support
 Plug 'rust-lang/rust.vim'
 
-" Nim support
-Plug 'zah/nim.vim'
-
 " Elixir
 Plug 'elixir-lang/vim-elixir'
 Plug 'mattonrails/vim-mix'
@@ -81,14 +78,8 @@ Plug 'chr4/sslsecure.vim'
 " ansible
 Plug 'chase/vim-ansible-yaml'
 
-" Gradle
-Plug 'tfnico/vim-gradle'
-
 " TOML
 Plug 'cespare/vim-toml'
-
-" RAML
-Plug 'IN3D/vim-raml'
 
 
 call plug#end()
