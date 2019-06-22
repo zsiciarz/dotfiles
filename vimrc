@@ -135,8 +135,8 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set t_Co=256
 " enable syntax highlighting
 syntax enable
-" dark background for solarized
-set background=dark
+" light background for solarized
+set background=light
 " the awesome color scheme
 colorscheme solarized
 " print margin
