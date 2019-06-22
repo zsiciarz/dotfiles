@@ -38,6 +38,7 @@ Plug 'FooSoft/vim-argwrap'
 " Python-related plugins
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'raimon49/requirements.txt.vim'
+Plug 'python/black'
 
 " Color scheme
 Plug 'altercation/vim-colors-solarized'
@@ -269,3 +270,7 @@ let g:elm_format_autosave = 1
 
 nnoremap <silent> <leader>aw :ArgWrap<CR>
 let g:argwrap_tail_comma = 1
+
+" autoformat Python with Black on save
+let g:black_skip_string_normalization = 1
+autocmd BufWritePre *.py execute ':Black'
