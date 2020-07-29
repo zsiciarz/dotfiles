@@ -19,7 +19,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'michaeljsmith/vim-indent-object'
 
 " 'vim as IDE' features
-Plug 'scrooloose/nerdcommenter'
+Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
