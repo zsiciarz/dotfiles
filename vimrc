@@ -45,7 +45,6 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-fugitive'
 
 " HTML and CSS plugins
-Plug 'Valloric/MatchTagAlways'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'ap/vim-css-color'
 Plug 'groenewege/vim-less'
