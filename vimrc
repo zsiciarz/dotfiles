@@ -30,7 +30,7 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'janko-m/vim-test'
+Plug 'vim-test/vim-test'
 Plug 'FooSoft/vim-argwrap'
 
 " Python-related plugins
