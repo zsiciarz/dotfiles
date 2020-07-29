@@ -247,15 +247,7 @@ if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
 
-let g:tmuxline_preset = {
-      \'a'    : '#S',
-      \'win'  : ['#I', '#W'],
-      \'cwin' : ['#I', '#W'],
-      \'x'    : '#(t now)',
-      \'y'    : ['%Y-%m-%d', '%H:%M'],
-      \'z'    : '#h',
-      \'options': {'status-justify': 'left'}
-      \}
+let g:tmuxline_preset = 'powerline'
 
 " \t to run a single test nearest to the cursor
 nmap <silent> <leader>t :TestNearest<CR>
