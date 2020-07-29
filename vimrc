@@ -38,7 +38,7 @@ Plug 'FooSoft/vim-argwrap'
 " Python-related plugins
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'raimon49/requirements.txt.vim'
-Plug 'python/black'
+Plug 'python/black',  { 'tag': '19.10b0' }
 
 " Color scheme
 Plug 'altercation/vim-colors-solarized'
