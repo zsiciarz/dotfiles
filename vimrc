@@ -261,7 +261,9 @@ let g:tmuxline_preset = {
 nmap <silent> <leader>t :TestNearest<CR>
 let test#python#djangotest#options = '--keepdb'
 
-let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+if executable('rg')
+    let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
+endif
 
 " autoformat Elm code on save
 let g:elm_format_autosave = 1
