@@ -272,5 +272,4 @@ nnoremap <silent> <leader>aw :ArgWrap<CR>
 let g:argwrap_tail_comma = 1
 
 " autoformat Python with Black on save
-let g:black_skip_string_normalization = 1
 autocmd BufWritePre *.py execute ':Black'
