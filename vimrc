@@ -247,6 +247,7 @@ let g:tmuxline_preset = 'powerline'
 " \t to run a single test nearest to the cursor
 nmap <silent> <leader>t :TestNearest<CR>
 let test#python#djangotest#options = '--keepdb'
+let test#python#pytest#executable = 'python -m pytest -vv'
 
 if executable('rg')
     let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
