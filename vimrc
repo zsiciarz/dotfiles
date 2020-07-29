@@ -243,10 +243,6 @@ let g:sql_type_default = 'pgsql'
 
 let g:jsx_ext_required = 0
 
-if executable('ag')
-  let g:ackprg = 'ag --vimgrep'
-endif
-
 let g:tmuxline_preset = 'powerline'
 
 " \t to run a single test nearest to the cursor
