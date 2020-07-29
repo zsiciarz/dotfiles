@@ -216,7 +216,7 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
 
 " ALE
-let g:ale_python_flake8_options = '--ignore=E501'
+let g:ale_python_flake8_options = '--ignore=E501,W503'
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
