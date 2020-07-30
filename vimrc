@@ -54,7 +54,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
 
 " PostgreSQL
-Plug 'exu/pgsql.vim'
+Plug 'lifepillar/pgsql.vim'
 
 " Rust support
 Plug 'rust-lang/rust.vim'
