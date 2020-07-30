@@ -56,10 +56,6 @@ Plug 'mxw/vim-jsx'
 " PostgreSQL
 Plug 'exu/pgsql.vim'
 
-" Haskell plugins
-Plug 'eagletmt/ghcmod-vim'
-Plug 'dag/vim2hs'
-
 " Rust support
 Plug 'rust-lang/rust.vim'
 
@@ -219,9 +215,6 @@ let g:ale_python_flake8_options = '--ignore=E501,W503'
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
-
-" always expand Haskell enumerations, like derived instances
-let g:haskell_conceal_enumerations = 0
 
 " YouCompleteMe
 autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable() | endif
