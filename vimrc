@@ -52,7 +52,6 @@ Plug 'groenewege/vim-less'
 " JavaScript and other frontend languages
 Plug 'pangloss/vim-javascript'
 Plug 'mxw/vim-jsx'
-Plug 'elmcast/elm-vim'
 
 " PostgreSQL
 Plug 'exu/pgsql.vim'
@@ -252,9 +251,6 @@ let test#python#pytest#executable = 'python -m pytest -vv'
 if executable('rg')
     let g:ctrlp_user_command = 'rg %s --files --color=never --glob ""'
 endif
-
-" autoformat Elm code on save
-let g:elm_format_autosave = 1
 
 nnoremap <silent> <leader>aw :ArgWrap<CR>
 let g:argwrap_tail_comma = 1
