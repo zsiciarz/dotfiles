@@ -24,7 +24,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
 Plug 'w0rp/ale'
-Plug 'Valloric/YouCompleteMe'
 Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
@@ -210,15 +209,6 @@ let g:ale_python_flake8_options = '--ignore=E501,W503'
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
-
-" YouCompleteMe
-autocmd! User YouCompleteMe if !has('vim_starting') | call youcompleteme#Enable() | endif
-let g:ycm_confirm_extra_conf = 0
-let g:ycm_python_binary_path = 'python'
-let g:ycm_rust_src_path = $HOME."/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src"
-autocmd FileType python,cpp,rust nnoremap <leader>d :YcmCompleter GoTo<CR>
-" disable docstring popup window when completing code
-autocmd FileType python,cpp,javascript setlocal completeopt-=preview
 
 " UltiSnips
 let g:UltiSnipsExpandTrigger = '<C-j>'
