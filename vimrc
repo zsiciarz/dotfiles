@@ -193,18 +193,13 @@ let g:netrw_list_hide = '^\.\S\+,\~$,\.pyc$,\.pyo$,__pycache__/,\.egg-info/'
 let g:netrw_mousemaps = 0
 let g:netrw_winsize = 20
 
-" highlight trailing whitespace
+" highlight trailing whitespace and delete on save
 highlight ExtraWhitespace ctermbg=red guibg=red
 autocmd ColorScheme * highlight ExtraWhitespace guibg=red
 autocmd BufEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
-
-" delete trailing whitespace
 autocmd BufWritePre * :%s/\s\+$//e
-
-" use 2 spaces in YAML files, every time
-autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -228,12 +223,6 @@ autocmd FileType python,cpp,javascript setlocal completeopt-=preview
 " UltiSnips
 let g:UltiSnipsExpandTrigger = '<C-j>'
 
-let g:rustfmt_autosave = 1
-
-let g:sql_type_default = 'pgsql'
-
-let g:jsx_ext_required = 0
-
 let g:tmuxline_preset = 'powerline'
 
 " \t to run a single test nearest to the cursor
@@ -248,5 +237,16 @@ endif
 nnoremap <silent> <leader>aw :ArgWrap<CR>
 let g:argwrap_tail_comma = 1
 
-" autoformat Python with Black on save
+" Filetype specific options
+" =========================
+
+" autoformat Python and Rust on save
 autocmd BufWritePre *.py execute ':Black'
+let g:rustfmt_autosave = 1
+
+" use 2 spaces in YAML files, every time
+autocmd FileType yaml setlocal tabstop=2 softtabstop=2 shiftwidth=2
+
+let g:sql_type_default = 'pgsql'
+
+let g:jsx_ext_required = 0
