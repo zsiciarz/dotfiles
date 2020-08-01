@@ -23,7 +23,6 @@ Plug 'preservim/nerdcommenter'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'edkolev/tmuxline.vim'
-Plug 'w0rp/ale'
 Plug 'majutsushi/tagbar'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' }
@@ -203,9 +202,6 @@ autocmd BufWritePre * :%s/\s\+$//e
 " Airline
 let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 1
-
-" ALE
-let g:ale_python_flake8_options = '--ignore=E501,W503'
 
 " Tagbar
 nmap <F8> :TagbarToggle<CR>
