@@ -31,6 +31,10 @@ Plug 'honza/vim-snippets'
 Plug 'vim-test/vim-test'
 Plug 'FooSoft/vim-argwrap'
 
+" Language Server Protocol integration
+Plug 'prabirshrestha/vim-lsp'
+Plug 'mattn/vim-lsp-settings'
+
 " Python-related plugins
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'raimon49/requirements.txt.vim'
@@ -198,6 +202,26 @@ autocmd BufEnter * match ExtraWhitespace /\s\+$/
 autocmd InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
 autocmd InsertLeave * match ExtraWhiteSpace /\s\+$/
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Language Server settings
+let g:lsp_diagnostics_echo_cursor = 1
+let g:lsp_settings = {
+\   'pyls-all': {
+\     'workspace_config': {
+\       'pyls': {
+\         'plugins': {
+\           'flake8': {
+\             'enabled': v:true,
+\             'ignore': 'E501,W503'
+\           }
+\         }
+\       }
+\     }
+\   }
+\}
+let g:lsp_log_verbose = 1
+let g:lsp_log_file = expand('~/vim-lsp.log')
+autocmd FileType python nnoremap <leader>d :LspDefinition<CR>
 
 " Airline
 let g:airline_powerline_fonts = 1
