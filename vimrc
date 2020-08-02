@@ -217,11 +217,18 @@ let g:lsp_settings = {
 \         }
 \       }
 \     }
+\   },
+\   'rls': {
+\     'workspace_config': {
+\       'rust': {
+\         'clippy_preference': 'on'
+\       }
+\     }
 \   }
 \}
 let g:lsp_log_verbose = 1
 let g:lsp_log_file = expand('~/vim-lsp.log')
-autocmd FileType python nnoremap <leader>d :LspDefinition<CR>
+autocmd FileType python,rust nnoremap <leader>d :LspDefinition<CR>
 
 " Airline
 let g:airline_powerline_fonts = 1
