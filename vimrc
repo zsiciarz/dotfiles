@@ -38,6 +38,7 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-buffer.vim'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 " Python-related plugins
 Plug 'jmcantrell/vim-virtualenv'
@@ -235,6 +236,7 @@ let g:lsp_log_file = expand('~/vim-lsp.log')
 autocmd FileType python,rust nnoremap <leader>d :LspDefinition<CR>
 
 " Asyncomplete
+let g:lsp_async_completion = 1
 call asyncomplete#register_source(asyncomplete#sources#buffer#get_source_options({
     \ 'name': 'buffer',
     \ 'allowlist': ['*'],
