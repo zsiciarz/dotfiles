@@ -43,7 +43,7 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 " Python-related plugins
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'raimon49/requirements.txt.vim'
-Plug 'psf/black',  { 'tag': '19.10b0' }
+Plug 'psf/black',  { 'tag': '20.8b1' }
 
 " Color scheme
 Plug 'altercation/vim-colors-solarized'
