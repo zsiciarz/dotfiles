@@ -4,6 +4,7 @@ require 'plugins'
 require 'options'
 require 'autocomplete'
 require 'maps'
+require 'treesitter_config'
 
 -- Misc
 -- ====
