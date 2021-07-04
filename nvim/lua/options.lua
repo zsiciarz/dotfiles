@@ -32,8 +32,9 @@ opt.hidden = true
 -- ======
 -- enable 24-bit color
 opt.termguicolors = true
--- enable Solarized
-vim.cmd('colorscheme solarized')
+-- enable Nord color scheme
+require('nord').set()
+vim.g.airline_theme = 'nord_minimal'
 -- print margin
 opt.colorcolumn = '80'
 
