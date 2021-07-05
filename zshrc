@@ -23,6 +23,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 alias ack=ack-grep
 alias gfo="git fetch origin"
 alias gitka="gitk --all"
+alias git="LC_MESSAGES=C git"
 
 export PYENV_ROOT="$HOME/.pyenv"
 if [ -d "$PYENV_ROOT" ]; then
