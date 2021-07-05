@@ -6,9 +6,6 @@ fi
 # use old history file after switching to Prezto
 export HISTFILE=$HOME/.zsh_history
 
-# 256 colors in terminal to make Solarized look better in Vim
-export TERM=xterm-256color
-
 export EDITOR='vim'
 
 # preserve color output with less
