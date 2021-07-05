@@ -6,9 +6,6 @@ fi
 # use old history file after switching to Prezto
 export HISTFILE=$HOME/.zsh_history
 
-# 256 colors in terminal to make Solarized look better in Vim
-export TERM=xterm-256color
-
 export EDITOR='vim'
 
 # preserve color output with less
@@ -18,6 +15,7 @@ export LESS=-RFX
 export PATH=$HOME/.local/bin:$HOME/bin:$HOME/.cabal/bin:/usr/lib/lightdm/lightdm:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games
 
 export WORKON_HOME=~/v
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 
 ### Added by the Heroku Toolbelt
@@ -26,6 +24,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 alias ack=ack-grep
 alias gfo="git fetch origin"
 alias gitka="gitk --all"
+alias git="LC_MESSAGES=C git"
 
 export PYENV_ROOT="$HOME/.pyenv"
 if [ -d "$PYENV_ROOT" ]; then
