@@ -39,7 +39,7 @@ Plug 'raimon49/requirements.txt.vim'
 Plug 'psf/black',  { 'tag': '20.8b1' }
 
 " Color scheme
-Plug 'altercation/vim-colors-solarized'
+Plug 'arcticicestudio/nord-vim'
 
 " Version control integration
 Plug 'tpope/vim-fugitive'
@@ -73,7 +73,6 @@ Plug 'chase/vim-ansible-yaml'
 
 " TOML
 Plug 'cespare/vim-toml'
-
 
 call plug#end()
 
@@ -124,14 +123,12 @@ set backupdir=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 " Colors
 " ======
 
-" for gnome-terminal to work correctly with solarized
-set t_Co=256
 " enable syntax highlighting
 syntax enable
-" dark background for solarized
+" dark background
 set background=dark
-" the awesome color scheme
-colorscheme solarized
+" Nord color scheme
+colorscheme nord
 " print margin
 set colorcolumn=80
 
