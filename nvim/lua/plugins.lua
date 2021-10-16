@@ -27,7 +27,8 @@ return require('packer').startup(function()
   use 'vim-test/vim-test'
   use 'hrsh7th/nvim-compe'
   -- Color scheme
-  use 'ishan9299/nvim-solarized-lua'
+  -- see: https://github.com/arcticicestudio/nord/issues/157
+  use 'arcticicestudio/nord-vim'
   -- Python plugins
   use 'raimon49/requirements.txt.vim'
   use {'psf/black',  tag = '20.8b1' }

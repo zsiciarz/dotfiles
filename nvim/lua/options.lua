@@ -33,7 +33,7 @@ opt.hidden = true
 -- enable 24-bit color
 opt.termguicolors = true
 -- enable Solarized
-vim.cmd('colorscheme solarized')
+vim.cmd('colorscheme nord')
 -- print margin
 opt.colorcolumn = '80'
 
