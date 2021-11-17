@@ -29,7 +29,7 @@ alias git="LC_MESSAGES=C git"
 export PYENV_ROOT="$HOME/.pyenv"
 if [ -d "$PYENV_ROOT" ]; then
     export PATH="$PYENV_ROOT/bin:$PATH"
-    eval "$(pyenv init -)"
+    eval "$(pyenv init --path)"
 fi
 
 [ -s "$HOME/bin/tmuxinator.zsh" ] && . $HOME/bin/tmuxinator.zsh
