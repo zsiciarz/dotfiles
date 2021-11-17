@@ -36,7 +36,7 @@ Plug 'FooSoft/vim-argwrap'
 " Python-related plugins
 Plug 'jmcantrell/vim-virtualenv'
 Plug 'raimon49/requirements.txt.vim'
-Plug 'psf/black',  { 'tag': '20.8b1' }
+Plug 'psf/black',  { 'tag': '21.9b0' }
 
 " Color scheme
 Plug 'arcticicestudio/nord-vim'
