@@ -170,6 +170,16 @@ highlight SpecialKey cterm=none ctermfg=0 guifg=#073642 ctermbg=8 guibg=#002b36
 
 " enable switching between unsaved buffers
 set hidden
+
+" See: https://superuser.com/questions/401926/how-to-get-shiftarrows-and-ctrlarrows-working-in-vim-in-tmux
+if &term =~ '^screen'
+    " tmux will send xterm-style keys when its xterm-keys option is on
+    execute "set <xUp>=\e[1;*A"
+    execute "set <xDown>=\e[1;*B"
+    execute "set <xRight>=\e[1;*C"
+    execute "set <xLeft>=\e[1;*D"
+endif
+
 " use Ctrl+arrow up/down to switch buffers
 noremap <C-Up>   :bn<CR>
 noremap <C-Down> :bp<CR>
