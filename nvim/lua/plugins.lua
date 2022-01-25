@@ -22,7 +22,6 @@ return require('packer').startup(function()
   use 'vim-airline/vim-airline-themes'
   -- TODO: 'edkolev/tmuxline.vim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use 'nvim-treesitter/playground'
   use 'vim-test/vim-test'
   use 'hrsh7th/nvim-compe'
   -- Color scheme
