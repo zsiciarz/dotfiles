@@ -23,10 +23,11 @@ return require('packer').startup(function()
   -- TODO: 'edkolev/tmuxline.vim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'vim-test/vim-test'
-  use 'hrsh7th/nvim-compe'
   -- Color scheme
   -- see: https://github.com/arcticicestudio/nord/issues/157
   use 'arcticicestudio/nord-vim'
+  -- autocomplete
+  -- TODO:nvim-cmp
   -- Python plugins
   use 'raimon49/requirements.txt.vim'
   use {'psf/black',  tag = '21.9b0' }
