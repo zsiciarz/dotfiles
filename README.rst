@@ -12,4 +12,4 @@ Python language server
 .. code-block::
 
     $ pipx install python-lsp-server
-    $ pipx inject python-lsp-server pyls-flake8 pyls-mypy pyls-isort python-lsp-black
+    $ pipx inject python-lsp-server pyls-flake8 pylsp-mypy pyls-isort python-lsp-black
