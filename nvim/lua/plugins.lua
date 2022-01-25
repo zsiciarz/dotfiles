@@ -26,8 +26,14 @@ return require('packer').startup(function()
   -- Color scheme
   -- see: https://github.com/arcticicestudio/nord/issues/157
   use 'arcticicestudio/nord-vim'
-  -- autocomplete
-  -- TODO:nvim-cmp
+  -- autocomplete and snippets
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  -- TODO: add LSP completion
+  use 'hrsh7th/nvim-cmp'
+  use 'L3MON4D3/LuaSnip'
+  use 'saadparwaiz1/cmp_luasnip'
+
   -- Python plugins
   use 'raimon49/requirements.txt.vim'
   use {'psf/black',  tag = '21.9b0' }
