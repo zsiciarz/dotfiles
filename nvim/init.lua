@@ -4,8 +4,10 @@ require 'plugins'
 require 'options'
 require 'autocomplete'
 require 'maps'
+require 'lsp_config'
 require 'telescope_config'
 require 'treesitter_config'
+
 
 -- Misc
 -- ====

@@ -29,6 +29,10 @@ return require('packer').startup(function()
   -- fuzzy finder
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+
+  -- language server support
+  use 'neovim/nvim-lspconfig'
+
   -- autocomplete and snippets
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
