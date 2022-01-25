@@ -32,7 +32,7 @@ opt.hidden = true
 -- ======
 -- enable 24-bit color
 opt.termguicolors = true
--- enable Solarized
+-- enable Nord
 vim.cmd('colorscheme nord')
 -- print margin
 opt.colorcolumn = '80'
@@ -47,7 +47,7 @@ opt.softtabstop = 4
 opt.shiftround = true
 -- expand tabs to spaces
 opt.expandtab = true
--- higlight tabs for indentation (Solarized-compatible colors)
+-- higlight tabs for indentation
 opt.list = true
 opt.listchars = 'tab:▸ ,eol: '
 
