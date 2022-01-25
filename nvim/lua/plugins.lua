@@ -4,8 +4,7 @@ local fn = vim.fn
 -- bootstrap as in packer README
 local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
 if fn.empty(fn.glob(install_path)) > 0 then
-  fn.system({'git', 'clone', 'https://github.com/wbthomason/packer.nvim', install_path})
-  execute 'packadd packer.nvim'
+  packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
 
 return require('packer').startup(function()
@@ -32,4 +31,8 @@ return require('packer').startup(function()
   -- Python plugins
   use 'raimon49/requirements.txt.vim'
   use {'psf/black',  tag = '20.8b1' }
+
+  if packer_bootstrap then
+    require('packer').sync()
+  end
 end)
