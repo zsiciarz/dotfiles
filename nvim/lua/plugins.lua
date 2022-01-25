@@ -18,9 +18,9 @@ return require('packer').startup(function()
   use 'preservim/nerdcommenter'
   use 'preservim/tagbar'
   use 'FooSoft/vim-argwrap'
+  -- TODO: lualine?
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
-  -- TODO: 'edkolev/tmuxline.vim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'vim-test/vim-test'
   -- Color scheme
