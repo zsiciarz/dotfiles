@@ -13,6 +13,7 @@ require('telescope').setup {
 require('telescope').load_extension 'fzf'
 
 -- fall back to file search if git search failed
+-- see: https://github.com/nvim-telescope/telescope.nvim/wiki/Configuration-Recipes#falling-back-to-find_files-if-git_files-cant-find-a-git-directory
 project_files = function()
   local opts = {}
   local ok = pcall(require"telescope.builtin".git_files, opts)
