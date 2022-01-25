@@ -30,7 +30,7 @@ return require('packer').startup(function()
   use 'arcticicestudio/nord-vim'
   -- Python plugins
   use 'raimon49/requirements.txt.vim'
-  use {'psf/black',  tag = '20.8b1' }
+  use {'psf/black',  tag = '21.9b0' }
 
   if packer_bootstrap then
     require('packer').sync()
