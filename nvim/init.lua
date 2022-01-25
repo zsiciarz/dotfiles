@@ -19,8 +19,6 @@ vim.cmd([[autocmd BufWritePre * :%s/\s\+$//e]])
 
 -- Plugin options
 -- ==============
-vim.cmd([[autocmd BufWritePre *.py execute ':Black']])
-
 g.airline_powerline_fonts = 1
 g['airline#extensions#tabline#enabled'] = 1
 
