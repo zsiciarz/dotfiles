@@ -26,6 +26,9 @@ return require('packer').startup(function()
   -- Color scheme
   -- see: https://github.com/arcticicestudio/nord/issues/157
   use 'arcticicestudio/nord-vim'
+  -- fuzzy finder
+  use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   -- autocomplete and snippets
   use 'hrsh7th/cmp-buffer'
   use 'hrsh7th/cmp-path'
