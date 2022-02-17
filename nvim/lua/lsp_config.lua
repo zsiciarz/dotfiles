@@ -8,6 +8,9 @@ vim.api.nvim_set_keymap('n', ']d', '<cmd>lua vim.diagnostic.goto_next()<CR>', op
 local on_attach = function(client, bufnr)
   -- TODO: more key bindings as per https://github.com/neovim/nvim-lspconfig
   vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>d', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+
+  -- run formatters before save
+  vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
 end
 
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -18,5 +21,3 @@ lspconfig.pylsp.setup {
   capabilities = capabilities,
 }
 
--- run black and isort before saving a Python file
-vim.cmd([[autocmd BufWritePre *.py lua vim.lsp.buf.formatting_sync()]])
