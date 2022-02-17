@@ -15,3 +15,6 @@ map('', '<F8>', ':TagbarToggle<CR>', {noremap = true})
 
 -- \t to run a single test nearest to the cursor
 map('n', '<leader>t', ':TestNearest<CR>', {noremap = true, silent = true})
+
+-- \aw to toggle function argument wrapping
+map('n', '<leader>aw', ':ArgWrap<CR>', {noremap = true, silent = true})

@@ -26,3 +26,5 @@ g['airline#extensions#tabline#enabled'] = 1
 
 g['test#python#djangotest#options'] = '--keepdb'
 g['test#python#pytest#executable'] = 'python -m pytest -vv'
+
+g['argwrap_tail_comma'] = 1
