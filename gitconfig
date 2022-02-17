@@ -4,7 +4,7 @@
     name = Zbigniew Siciarz
     email = zbigniew@siciarz.net
 [core]
-    editor = vim
+    editor = nvim
     excludesfile = ~/.gitignore_global
 [alias]
     st = status
