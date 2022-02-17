@@ -18,6 +18,7 @@ return require('packer').startup(function()
   use 'preservim/nerdcommenter'
   use 'preservim/tagbar'
   use 'FooSoft/vim-argwrap'
+  use 'tpope/vim-fugitive'
   -- TODO: lualine?
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
