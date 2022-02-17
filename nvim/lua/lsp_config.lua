@@ -21,3 +21,15 @@ lspconfig.pylsp.setup {
   capabilities = capabilities,
 }
 
+lspconfig.tsserver.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  -- TODO: disable tsserver formatting and use prettier
+  -- see: https://jose-elias-alvarez.medium.com/configuring-neovims-lsp-client-for-typescript-development-5789d58ea9c
+  -- and https://github.com/MunifTanjim/prettier.nvim
+}
+
+lspconfig.jsonls.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+}
