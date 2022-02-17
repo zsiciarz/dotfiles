@@ -22,6 +22,7 @@ return require('packer').startup(function()
   -- TODO: lualine?
   use 'vim-airline/vim-airline'
   use 'vim-airline/vim-airline-themes'
+  use 'edkolev/tmuxline.vim'
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   use 'vim-test/vim-test'
   -- Color scheme
