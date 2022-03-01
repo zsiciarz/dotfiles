@@ -34,6 +34,7 @@ return require('packer').startup(function()
 
   -- language server support
   use 'neovim/nvim-lspconfig'
+  use 'jose-elias-alvarez/null-ls.nvim'
 
   -- autocomplete and snippets
   use 'hrsh7th/cmp-buffer'

@@ -1,4 +1,5 @@
 local lspconfig = require 'lspconfig'
+local null_ls = require 'null-ls'
 
 local opts = { noremap=true, silent=true }
 
@@ -22,7 +23,12 @@ lspconfig.pylsp.setup {
 }
 
 lspconfig.tsserver.setup {
-  on_attach = on_attach,
+  on_attach = function(client, bufnr)
+    client.resolved_capabilities.document_formatting = false
+    client.resolved_capabilities.document_range_formatting = false
+    vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>d', '<cmd>lua vim.lsp.buf.definition()<CR>', opts)
+    vim.cmd("autocmd BufWritePre <buffer> lua vim.lsp.buf.formatting_sync()")
+  end,
   capabilities = capabilities,
   -- TODO: disable tsserver formatting and use prettier
   -- see: https://jose-elias-alvarez.medium.com/configuring-neovims-lsp-client-for-typescript-development-5789d58ea9c
@@ -32,4 +38,13 @@ lspconfig.tsserver.setup {
 lspconfig.jsonls.setup {
   on_attach = on_attach,
   capabilities = capabilities,
+}
+
+null_ls.setup {
+  sources = {
+    null_ls.builtins.diagnostics.eslint,
+    null_ls.builtins.code_actions.eslint,
+    null_ls.builtins.formatting.prettier,
+  },
+  on_attach = on_attach,
 }
