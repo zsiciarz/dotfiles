@@ -21,4 +21,4 @@ project_files = function()
 end
 
 -- bind fuzzy search under Ctrl+P
-vim.api.nvim_set_keymap('n', '<C-p>', [[<cmd>lua project_files()<CR>]], { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-p>', '', { noremap = true, silent = true, callback = project_files })
