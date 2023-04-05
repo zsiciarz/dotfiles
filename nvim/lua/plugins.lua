@@ -27,7 +27,7 @@ return require('packer').startup(function()
   use 'vim-test/vim-test'
   -- Color scheme
   -- see: https://github.com/arcticicestudio/nord/issues/157
-  use 'arcticicestudio/nord-vim'
+  use 'nordtheme/vim'
   -- fuzzy finder
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
