@@ -28,6 +28,7 @@ return require("lazy").setup({
   "vim-airline/vim-airline",
   "vim-airline/vim-airline-themes",
   "edkolev/tmuxline.vim",
+  {"akinsho/bufferline.nvim", version = "*", dependencies = "nvim-tree/nvim-web-devicons"},
   -- Color scheme
   "nordtheme/vim",
   { "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
