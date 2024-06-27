@@ -30,8 +30,6 @@ lspconfig.tsserver.setup {}
 lspconfig.jsonls.setup {}
 null_ls.setup {
   sources = {
-    null_ls.builtins.diagnostics.eslint,
-    null_ls.builtins.code_actions.eslint,
-    null_ls.builtins.formatting.prettier,
+    require("none-ls.code_actions.eslint"),
   },
 }
