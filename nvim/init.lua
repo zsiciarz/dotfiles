@@ -22,9 +22,12 @@ vim.cmd([[autocmd BufWritePre * :%s/\s\+$//e]])
 -- Plugin options
 -- ==============
 g.airline_powerline_fonts = 1
-g['airline#extensions#tabline#enabled'] = 1
+g['airline#extensions#tabline#enabled'] = 0
 
 g['test#python#djangotest#options'] = '--keepdb'
 g['test#python#pytest#executable'] = 'python -m pytest -vv'
 
 g['argwrap_tail_comma'] = 1
+
+
+require("bufferline").setup{}
