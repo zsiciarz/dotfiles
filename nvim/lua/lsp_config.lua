@@ -1,5 +1,4 @@
 local lspconfig = require 'lspconfig'
-local null_ls = require 'null-ls'
 
 local opts = { noremap=true, silent=true }
 
@@ -28,8 +27,3 @@ vim.api.nvim_create_autocmd('LspAttach', {
 lspconfig.pylsp.setup {}
 lspconfig.ts_ls.setup {}
 lspconfig.jsonls.setup {}
-null_ls.setup {
-  sources = {
-    require("none-ls.code_actions.eslint"),
-  },
-}

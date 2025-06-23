@@ -38,7 +38,6 @@ return require("lazy").setup({
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
   -- language server support
   "neovim/nvim-lspconfig",
-  {"nvimtools/none-ls.nvim", dependencies = {"nvimtools/none-ls-extras.nvim"} },
   -- autocomplete and snippets
   "hrsh7th/cmp-buffer",
   "hrsh7th/cmp-path",
