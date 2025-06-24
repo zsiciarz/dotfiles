@@ -6,7 +6,7 @@ fi
 # use old history file after switching to Prezto
 export HISTFILE=$HOME/.zsh_history
 
-export EDITOR='vim'
+export EDITOR='nvim'
 
 # preserve color output with less
 export LESS=-RFX
@@ -25,6 +25,7 @@ alias ack=ack-grep
 alias gfo="git fetch origin"
 alias gitka="gitk --all"
 alias git="LC_MESSAGES=C git"
+alias vim="nvim"
 
 export PYENV_ROOT="$HOME/.pyenv"
 if [ -d "$PYENV_ROOT" ]; then
