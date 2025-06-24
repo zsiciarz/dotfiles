@@ -29,4 +29,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 
 -- TODO: other language servers
-vim.lsp.enable({'pylsp'})
+vim.lsp.enable({
+    'lua',
+    'pylsp',
+})
