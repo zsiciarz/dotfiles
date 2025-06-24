@@ -36,6 +36,7 @@ return require("lazy").setup({
   -- fuzzy finder
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
+  { "mason-org/mason.nvim", opts = {}},
   -- autocomplete and snippets
   "L3MON4D3/LuaSnip",
   -- Python plugins
