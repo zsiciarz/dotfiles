@@ -20,7 +20,8 @@ opt.autochdir = true
 opt.mouse = 'a'
 
 -- ignore some (binary and whatnot) files and directories
-opt.wildignore = '*/htmlcov*,*/build/*,*/dist/*,*/attachments/*,*/node_modules*,*/elm-stuff/*,*/target/*,*.so,*.o,*.pyc,*.pyo,*.swp,*.jar,*.hi'
+opt.wildignore =
+'*/htmlcov*,*/build/*,*/dist/*,*/attachments/*,*/node_modules*,*/elm-stuff/*,*/target/*,*.so,*.o,*.pyc,*.pyo,*.swp,*.jar,*.hi'
 -- don't fold code (personal preference)
 opt.foldenable = false
 -- copy backup files instead of moving; fixes filesystem watchers
