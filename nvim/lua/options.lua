@@ -53,3 +53,5 @@ opt.listchars = 'tab:▸ ,eol: '
 
 -- use filler lines and open diff in vertical splits
 opt.diffopt = 'filler,vertical'
+
+opt.completeopt = 'menuone,noselect'

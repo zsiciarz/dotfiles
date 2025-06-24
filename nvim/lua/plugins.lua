@@ -36,15 +36,8 @@ return require("lazy").setup({
   -- fuzzy finder
   { "nvim-telescope/telescope.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
-  -- language server support
-  "neovim/nvim-lspconfig",
   -- autocomplete and snippets
-  "hrsh7th/cmp-buffer",
-  "hrsh7th/cmp-path",
-  "hrsh7th/cmp-nvim-lsp",
-  "hrsh7th/nvim-cmp",
   "L3MON4D3/LuaSnip",
-  "saadparwaiz1/cmp_luasnip",
   -- Python plugins
   "raimon49/requirements.txt.vim",
 }, {

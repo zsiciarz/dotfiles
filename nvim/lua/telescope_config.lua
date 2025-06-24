@@ -25,4 +25,4 @@ project_files = function()
 end
 
 -- bind fuzzy search under Ctrl+P
-vim.api.nvim_set_keymap('n', '<C-p>', '', { noremap = true, silent = true, callback = project_files })
+vim.keymap.set('n', '<C-p>', project_files, { silent = true })

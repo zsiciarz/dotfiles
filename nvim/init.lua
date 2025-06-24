@@ -2,7 +2,6 @@ local g = vim.g
 
 require 'plugins'
 require 'options'
-require 'autocomplete'
 require 'maps'
 require 'lsp_config'
 require 'telescope_config'
@@ -30,4 +29,4 @@ g['test#python#pytest#executable'] = 'python -m pytest -vv'
 g['argwrap_tail_comma'] = 1
 
 
-require("bufferline").setup{}
+require("bufferline").setup {}
