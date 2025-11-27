@@ -11,7 +11,7 @@ Python language server
 
 .. code-block::
 
-    $ uv tool install python-lsp-server --with=pyls-flake8 --with=pylsp-mypy --with=pyls-isort --with=python-lsp-black
+    $ uv tool install python-lsp-server --with=pyflakes --with=pylsp-mypy --with=pyls-isort --with=python-lsp-black
 
 Typescript and JSON language servers
 ------------------------------------
