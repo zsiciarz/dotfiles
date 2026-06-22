@@ -1,6 +1,13 @@
 Notes
 =====
 
+Treesitter
+
+For Neovim >= 0.12, install the CLI:
+
+.. code-block::
+   $ sudo apt install tree-sitter-cli
+
 Airline
 -------
 

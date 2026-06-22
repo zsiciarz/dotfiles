@@ -37,6 +37,8 @@ return require("lazy").setup({
     "nordtheme/vim",
     {
         "nvim-treesitter/nvim-treesitter",
+        branch = "main",
+        lazy = false,
         build = ":TSUpdate"
     },
     "vim-test/vim-test",
